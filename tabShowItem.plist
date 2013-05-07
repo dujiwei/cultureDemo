@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>items</key>
+	<array>
+		<dict>
+			<key>name</key>
+			<string>首   页</string>
+			<key>image</key>
+			<string>home-ipad.png</string>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>导   览</string>
+			<key>image</key>
+			<string>guide-ipad.png</string>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>地   图</string>
+			<key>image</key>
+			<string>map-ipad.png</string>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>分   享</string>
+			<key>image</key>
+			<string>share-ipad.png</string>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>我的导览</string>
+			<key>image</key>
+			<string>mypack-ipad.png</string>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>更多应用</string>
+			<key>image</key>
+			<string>moreApp-ipad.png</string>
+		</dict>
+	</array>
+</dict>
+</plist>

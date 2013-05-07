@@ -1,0 +1,53 @@
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/pj_culture/!svn/ver/2/2011-10_CultureDemo/Src/cultureDemo/Classes/WeiboEngine
+END
+OAuthController.m
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/pj_culture/!svn/ver/2/2011-10_CultureDemo/Src/cultureDemo/Classes/WeiboEngine/OAuthController.m
+END
+WeiboClient.m
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/pj_culture/!svn/ver/2/2011-10_CultureDemo/Src/cultureDemo/Classes/WeiboEngine/WeiboClient.m
+END
+OAuthEngine.m
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/pj_culture/!svn/ver/2/2011-10_CultureDemo/Src/cultureDemo/Classes/WeiboEngine/OAuthEngine.m
+END
+URLConnection.h
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/pj_culture/!svn/ver/2/2011-10_CultureDemo/Src/cultureDemo/Classes/WeiboEngine/URLConnection.h
+END
+OAuthController.h
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/pj_culture/!svn/ver/2/2011-10_CultureDemo/Src/cultureDemo/Classes/WeiboEngine/OAuthController.h
+END
+WeiboClient.h
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/pj_culture/!svn/ver/2/2011-10_CultureDemo/Src/cultureDemo/Classes/WeiboEngine/WeiboClient.h
+END
+OAuthEngine.h
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/pj_culture/!svn/ver/2/2011-10_CultureDemo/Src/cultureDemo/Classes/WeiboEngine/OAuthEngine.h
+END
+URLConnection.m
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/pj_culture/!svn/ver/2/2011-10_CultureDemo/Src/cultureDemo/Classes/WeiboEngine/URLConnection.m
+END

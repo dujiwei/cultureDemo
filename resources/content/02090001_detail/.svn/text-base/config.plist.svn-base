@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>02090001</key>
+	<dict>
+		<key>Title</key>
+		<string>保利剧院</string>
+		<key>GuideMapTitle</key>
+		<string>剧场座位图</string>
+		<key>width</key>
+		<integer>0</integer>
+		<key>height</key>
+		<integer>0</integer>
+		<key>SubListTitle</key>
+		<string>剧院导览</string>
+		<key>SubList</key>
+		<array>
+			<dict>
+				<key>Title</key>
+				<string>贵宾厅</string>
+			</dict>
+			<dict>
+				<key>Title</key>
+				<string>升降乐池</string>
+			</dict>
+			<dict>
+				<key>Title</key>
+				<string>钢琴房</string>
+			</dict>
+			<dict>
+				<key>Title</key>
+				<string>休息室</string>
+			</dict>
+		</array>
+		<key>InfoPages</key>
+		<array>
+			<dict>
+				<key>Title</key>
+				<string>设施建设</string>
+				<key>Content</key>
+				<string>1.html</string>
+			</dict>
+			<dict>
+				<key>Title</key>
+				<string>演出活动</string>
+				<key>Content</key>
+				<string>2.html</string>
+			</dict>
+			<dict>
+				<key>Title</key>
+				<string>地址及订票电话</string>
+				<key>Content</key>
+				<string>3.html</string>
+			</dict>
+		</array>
+	</dict>
+</dict>
+</plist>

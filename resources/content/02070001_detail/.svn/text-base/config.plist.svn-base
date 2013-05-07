@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>02070001</key>
+	<dict>
+		<key>Title</key>
+		<string>北京展览管</string>
+		<key>GuideMapTitle</key>
+		<string>北京展览馆地图</string>
+		<key>width</key>
+		<integer>0</integer>
+		<key>height</key>
+		<integer>0</integer>
+		<key>SubListTitle</key>
+		<string>北京展览馆项目</string>
+		<key>SubList</key>
+		<array>
+			<dict>
+				<key>Title</key>
+				<string>会场容量</string>
+			</dict>
+			<dict>
+				<key>Title</key>
+				<string>广告服务</string>
+			</dict>
+			<dict>
+				<key>Title</key>
+				<string>开幕式礼仪服务</string>
+			</dict>
+		</array>
+		<key>InfoPages</key>
+		<array>
+			<dict>
+				<key>Title</key>
+				<string>近期展会信息</string>
+				<key>Content</key>
+				<string>1.html</string>
+			</dict>
+			<dict>
+				<key>Title</key>
+				<string>近期演出</string>
+				<key>Content</key>
+				<string>2.html</string>
+			</dict>
+			<dict>
+				<key>Title</key>
+				<string>位置交通</string>
+				<key>Content</key>
+				<string>3.html</string>
+			</dict>
+			<dict>
+				<key>Title</key>
+				<string>服务须知</string>
+				<key>Content</key>
+				<string>4.html</string>
+			</dict>
+		</array>
+	</dict>
+</dict>
+</plist>

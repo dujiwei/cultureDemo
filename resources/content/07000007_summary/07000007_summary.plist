@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>mainTitle</key>
+	<string>中国国家博物馆</string>
+	<key>mainDescription</key>
+	<string> </string>
+	<key>subItems</key>
+	<array>
+		<dict>
+			<key>imageName</key>
+			<string>0.jpg</string>
+			<key>subTitle</key>
+			<string>中国国家博物馆</string>
+			<key>subDescription</key>
+			<string>中国国家博物馆位于天安门广场东侧，与人民大会堂遥相呼应。2003年2月在原中国历史博物馆和中国革命博物馆两馆合并的基础上组建成立，隶属于中华人民共和国文化部，是以历史与艺术并重，集收藏、展览、研究、考古、公共教育、文化交流于一体的综合性国家博物馆。</string>
+		</dict>
+		<dict>
+			<key>imageName</key>
+			<string>1.jpg</string>
+			<key>subTitle</key>
+			<string>国家博物馆新装</string>
+			<key>subDescription</key>
+			<string>2007年3月至2010年底，中国国家博物馆进行了改扩建工程，馆舍总建筑面积19.19万平方米，硬件设施和功能为世界一流。藏品数量为100余万件，展厅数量为49个，设有“古代中国”、“复兴之路”两个基本陈列，设有十余个各艺术门类的专题展览及国际交流展览。
+2011年3月1日国家博物馆新馆竣工，历时3年修建，投资25亿的新国博，掀开了新的一章。</string>
+		</dict>
+		<dict>
+			<key>imageName</key>
+			<string>2.jpg</string>
+			<key>subTitle</key>
+			<string>国家博物馆新装</string>
+			<key>subDescription</key>
+			<string>与我国现有的博物馆相比较，国家博物馆还会带给观众不一样的变化，即能够得到非常高质量的，文化精神上的一种享受。在历史含量方面，文化底蕴方面也是如此。在风格上，国家博物馆将保持庄严、宏伟的建筑风格，高度概括、浓缩我们的发展历程。展览手段上，将不局限于故有的陈列方式，而是综合运用多种现代化展示方法，如大视屏，大屏幕，超薄电视等多媒体手段，尽量为观众还原历史氛围并增加展览的动感</string>
+		</dict>
+		<dict>
+			<key>imageName</key>
+			<string>3.jpg</string>
+			<key>subTitle</key>
+			<string>国家博物馆新装</string>
+			<key>subDescription</key>
+			<string>中国国家博物馆是世界上建筑面积最大的博物馆，将会在保护国家文化遗产、展示祖国悠久历史、弘扬中华文明，进行爱国主义教育，开展对外文化交流，体现中华文化软实力等方面发挥积极而重要的作用。为适应构建公共文化服务体系和建设学习型社会的需要，将成为广大公众特别是青少年学习历史和文化知识、接受文明熏陶、进行终身学习的文化阵地和课堂。</string>
+		</dict>
+	</array>
+</dict>
+</plist>

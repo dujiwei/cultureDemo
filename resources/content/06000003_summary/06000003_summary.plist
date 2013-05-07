@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>mainTitle</key>
+	<string>北京市纪念建党90周年群众文化活动</string>
+	<key>mainDescription</key>
+	<string>第七届“舞动北京—群众舞蹈大赛</string>
+	<key>subItems</key>
+	<array>
+		<dict>
+			<key>imageName</key>
+			<string>0.png</string>
+			<key>subTitle</key>
+			<string>第七届舞动北京群众舞蹈大赛</string>
+			<key>subDescription</key>
+			<string>主办单位：北京市委宣传部          北京市文化局          北京市文联          共青团市委承办单位：北京文化艺术活动中心活动时间：4月－10月底活动内容及特色：由中共北京市委宣传部、北京市文化局、北京市总工会、共青团北京市委员会、北京市文学艺术界联合会联合主办，北京文化艺术活动中心、北京电视台、央视“喜乐乐”网（中国社区网络电视台）承办的第七届“舞动北京”群众舞蹈大赛决赛暨颁奖晚会于2011年10月10日在石景山区体育馆隆重举行。市委副秘书长傅华出席决赛晚会并宣布“金秋群众文化活动百场汇”启动。</string>
+		</dict>
+		<dict>
+			<key>imageName</key>
+			<string>1.png</string>
+			<key>subTitle</key>
+			<string>十佳表演奖</string>
+			<key>subDescription</key>
+			<string>中国鼓</string>
+		</dict>
+		<dict>
+			<key>imageName</key>
+			<string>2.png</string>
+			<key>subTitle</key>
+			<string>十佳表演奖</string>
+			<key>subDescription</key>
+			<string>荷和之美</string>
+		</dict>
+		<dict>
+			<key>imageName</key>
+			<string>3.png</string>
+			<key>subTitle</key>
+			<string>十佳表演奖</string>
+			<key>subDescription</key>
+			<string>一双小小手</string>
+		</dict>
+		<dict>
+			<key>imageName</key>
+			<string>4.png</string>
+			<key>subTitle</key>
+			<string>十佳表演奖</string>
+			<key>subDescription</key>
+			<string>飞鬃马</string>
+		</dict>
+	</array>
+</dict>
+</plist>

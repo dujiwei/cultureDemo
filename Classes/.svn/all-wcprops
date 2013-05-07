@@ -1,0 +1,761 @@
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/pj_culture/!svn/ver/2/2011-10_CultureDemo/Src/cultureDemo/Classes
+END
+detailViewController.xib
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/pj_culture/!svn/ver/2/2011-10_CultureDemo/Src/cultureDemo/Classes/detailViewController.xib
+END
+myPackTableCell.h
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/pj_culture/!svn/ver/2/2011-10_CultureDemo/Src/cultureDemo/Classes/myPackTableCell.h
+END
+DetailSubDetailViewController.h
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/pj_culture/!svn/ver/2/2011-10_CultureDemo/Src/cultureDemo/Classes/DetailSubDetailViewController.h
+END
+showSubSystemController.xib
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/pj_culture/!svn/ver/2/2011-10_CultureDemo/Src/cultureDemo/Classes/showSubSystemController.xib
+END
+dtCloudSlider.h
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/pj_culture/!svn/ver/2/2011-10_CultureDemo/Src/cultureDemo/Classes/dtCloudSlider.h
+END
+detailViewController.h
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/pj_culture/!svn/ver/2/2011-10_CultureDemo/Src/cultureDemo/Classes/detailViewController.h
+END
+myPackTableCell.m
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/pj_culture/!svn/ver/2/2011-10_CultureDemo/Src/cultureDemo/Classes/myPackTableCell.m
+END
+SummaryViewController-ipad.xib
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/pj_culture/!svn/ver/2/2011-10_CultureDemo/Src/cultureDemo/Classes/SummaryViewController-ipad.xib
+END
+DetailSubDetailViewController.m
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/pj_culture/!svn/ver/2/2011-10_CultureDemo/Src/cultureDemo/Classes/DetailSubDetailViewController.m
+END
+showSubSystemController.h
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/pj_culture/!svn/ver/2/2011-10_CultureDemo/Src/cultureDemo/Classes/showSubSystemController.h
+END
+dtCloudSlider.m
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/pj_culture/!svn/ver/2/2011-10_CultureDemo/Src/cultureDemo/Classes/dtCloudSlider.m
+END
+detailViewController.m
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/pj_culture/!svn/ver/2/2011-10_CultureDemo/Src/cultureDemo/Classes/detailViewController.m
+END
+paimaiTableCell.h
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/pj_culture/!svn/ver/2/2011-10_CultureDemo/Src/cultureDemo/Classes/paimaiTableCell.h
+END
+showSubSystemController.m
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/pj_culture/!svn/ver/2/2011-10_CultureDemo/Src/cultureDemo/Classes/showSubSystemController.m
+END
+SinaWeiboViewController.xib
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/pj_culture/!svn/ver/2/2011-10_CultureDemo/Src/cultureDemo/Classes/SinaWeiboViewController.xib
+END
+ShowListViewController.h
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/pj_culture/!svn/ver/2/2011-10_CultureDemo/Src/cultureDemo/Classes/ShowListViewController.h
+END
+mapData.plist
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/pj_culture/!svn/ver/2/2011-10_CultureDemo/Src/cultureDemo/Classes/mapData.plist
+END
+DetailSubListController.h
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/pj_culture/!svn/ver/2/2011-10_CultureDemo/Src/cultureDemo/Classes/DetailSubListController.h
+END
+SummaryViewDSFromRes.h
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/pj_culture/!svn/ver/2/2011-10_CultureDemo/Src/cultureDemo/Classes/SummaryViewDSFromRes.h
+END
+DetailInfoViewController.h
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/pj_culture/!svn/ver/2/2011-10_CultureDemo/Src/cultureDemo/Classes/DetailInfoViewController.h
+END
+paimaiTableCell.m
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/pj_culture/!svn/ver/2/2011-10_CultureDemo/Src/cultureDemo/Classes/paimaiTableCell.m
+END
+SinaWeiboViewController.h
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/pj_culture/!svn/ver/2/2011-10_CultureDemo/Src/cultureDemo/Classes/SinaWeiboViewController.h
+END
+ShowListViewController.m
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/pj_culture/!svn/ver/2/2011-10_CultureDemo/Src/cultureDemo/Classes/ShowListViewController.m
+END
+DetailSubListController.m
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/pj_culture/!svn/ver/2/2011-10_CultureDemo/Src/cultureDemo/Classes/DetailSubListController.m
+END
+SummaryViewDSFromRes.m
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/pj_culture/!svn/ver/2/2011-10_CultureDemo/Src/cultureDemo/Classes/SummaryViewDSFromRes.m
+END
+DetailInfoViewController.m
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/pj_culture/!svn/ver/2/2011-10_CultureDemo/Src/cultureDemo/Classes/DetailInfoViewController.m
+END
+cultureDemoIpadAppDelegate.h
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/pj_culture/!svn/ver/2/2011-10_CultureDemo/Src/cultureDemo/Classes/cultureDemoIpadAppDelegate.h
+END
+com_btn_checked.png
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/pj_culture/!svn/ver/2/2011-10_CultureDemo/Src/cultureDemo/Classes/com_btn_checked.png
+END
+SinaWeiboViewController.m
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/pj_culture/!svn/ver/2/2011-10_CultureDemo/Src/cultureDemo/Classes/SinaWeiboViewController.m
+END
+culturePlaceViewController.h
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/pj_culture/!svn/ver/2/2011-10_CultureDemo/Src/cultureDemo/Classes/culturePlaceViewController.h
+END
+SummaryViewController.xib
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/pj_culture/!svn/ver/2/2011-10_CultureDemo/Src/cultureDemo/Classes/SummaryViewController.xib
+END
+cultureDemoIpadAppDelegate.m
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/pj_culture/!svn/ver/2/2011-10_CultureDemo/Src/cultureDemo/Classes/cultureDemoIpadAppDelegate.m
+END
+myPackController.h
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/pj_culture/!svn/ver/2/2011-10_CultureDemo/Src/cultureDemo/Classes/myPackController.h
+END
+culturePlaceViewController.m
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/pj_culture/!svn/ver/2/2011-10_CultureDemo/Src/cultureDemo/Classes/culturePlaceViewController.m
+END
+myPackController.m
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/pj_culture/!svn/ver/2/2011-10_CultureDemo/Src/cultureDemo/Classes/myPackController.m
+END
+ipadHomeTableCell.h
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/pj_culture/!svn/ver/2/2011-10_CultureDemo/Src/cultureDemo/Classes/ipadHomeTableCell.h
+END
+meetingTableCell.h
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/pj_culture/!svn/ver/2/2011-10_CultureDemo/Src/cultureDemo/Classes/meetingTableCell.h
+END
+myPackTableCell-ipad.xib
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/pj_culture/!svn/ver/2/2011-10_CultureDemo/Src/cultureDemo/Classes/myPackTableCell-ipad.xib
+END
+ipadHomeTableCell.m
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/pj_culture/!svn/ver/2/2011-10_CultureDemo/Src/cultureDemo/Classes/ipadHomeTableCell.m
+END
+meetingTableCell.m
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/pj_culture/!svn/ver/2/2011-10_CultureDemo/Src/cultureDemo/Classes/meetingTableCell.m
+END
+DetailMainViewController.h
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/pj_culture/!svn/ver/2/2011-10_CultureDemo/Src/cultureDemo/Classes/DetailMainViewController.h
+END
+myPackTableCell-ipad.h
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/pj_culture/!svn/ver/2/2011-10_CultureDemo/Src/cultureDemo/Classes/myPackTableCell-ipad.h
+END
+FirstDetailViewController.h
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/pj_culture/!svn/ver/2/2011-10_CultureDemo/Src/cultureDemo/Classes/FirstDetailViewController.h
+END
+DetailMainViewController.m
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/pj_culture/!svn/ver/2/2011-10_CultureDemo/Src/cultureDemo/Classes/DetailMainViewController.m
+END
+myPackTableCell-ipad.m
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/pj_culture/!svn/ver/2/2011-10_CultureDemo/Src/cultureDemo/Classes/myPackTableCell-ipad.m
+END
+baiduMapViewController.xib
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/pj_culture/!svn/ver/2/2011-10_CultureDemo/Src/cultureDemo/Classes/baiduMapViewController.xib
+END
+MoveScaleImageView.h
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/pj_culture/!svn/ver/2/2011-10_CultureDemo/Src/cultureDemo/Classes/MoveScaleImageView.h
+END
+subStyleController.h
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/pj_culture/!svn/ver/2/2011-10_CultureDemo/Src/cultureDemo/Classes/subStyleController.h
+END
+DetailSubContainerController.xib
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/pj_culture/!svn/ver/2/2011-10_CultureDemo/Src/cultureDemo/Classes/DetailSubContainerController.xib
+END
+FirstDetailViewController.m
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/pj_culture/!svn/ver/2/2011-10_CultureDemo/Src/cultureDemo/Classes/FirstDetailViewController.m
+END
+paimaiTableCell-ipad.xib
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/pj_culture/!svn/ver/2/2011-10_CultureDemo/Src/cultureDemo/Classes/paimaiTableCell-ipad.xib
+END
+guideTableCell-ipad.h
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/pj_culture/!svn/ver/2/2011-10_CultureDemo/Src/cultureDemo/Classes/guideTableCell-ipad.h
+END
+baiduMapViewController.h
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/pj_culture/!svn/ver/2/2011-10_CultureDemo/Src/cultureDemo/Classes/baiduMapViewController.h
+END
+MoveScaleImageView.m
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/pj_culture/!svn/ver/2/2011-10_CultureDemo/Src/cultureDemo/Classes/MoveScaleImageView.m
+END
+RootViewController.h
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/pj_culture/!svn/ver/2/2011-10_CultureDemo/Src/cultureDemo/Classes/RootViewController.h
+END
+DetailSubContainerController.h
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/pj_culture/!svn/ver/2/2011-10_CultureDemo/Src/cultureDemo/Classes/DetailSubContainerController.h
+END
+paimaiTableCell-ipad.h
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/pj_culture/!svn/ver/2/2011-10_CultureDemo/Src/cultureDemo/Classes/paimaiTableCell-ipad.h
+END
+subStyleController.m
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/pj_culture/!svn/ver/2/2011-10_CultureDemo/Src/cultureDemo/Classes/subStyleController.m
+END
+shareToSinaController.h
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/pj_culture/!svn/ver/2/2011-10_CultureDemo/Src/cultureDemo/Classes/shareToSinaController.h
+END
+dataBaseOperate.h
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/pj_culture/!svn/ver/2/2011-10_CultureDemo/Src/cultureDemo/Classes/dataBaseOperate.h
+END
+subSystemDetailController.h
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/pj_culture/!svn/ver/2/2011-10_CultureDemo/Src/cultureDemo/Classes/subSystemDetailController.h
+END
+com_btn_check@2x.png
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/pj_culture/!svn/ver/2/2011-10_CultureDemo/Src/cultureDemo/Classes/com_btn_check@2x.png
+END
+guideTableCell-ipad.m
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/pj_culture/!svn/ver/2/2011-10_CultureDemo/Src/cultureDemo/Classes/guideTableCell-ipad.m
+END
+baiduMapViewController.m
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/pj_culture/!svn/ver/2/2011-10_CultureDemo/Src/cultureDemo/Classes/baiduMapViewController.m
+END
+myPackTableCell.xib
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/pj_culture/!svn/ver/2/2011-10_CultureDemo/Src/cultureDemo/Classes/myPackTableCell.xib
+END
+RootViewController.m
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/pj_culture/!svn/ver/2/2011-10_CultureDemo/Src/cultureDemo/Classes/RootViewController.m
+END
+DetailSubContainerController.m
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/pj_culture/!svn/ver/2/2011-10_CultureDemo/Src/cultureDemo/Classes/DetailSubContainerController.m
+END
+paimaiTableCell-ipad.m
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/pj_culture/!svn/ver/2/2011-10_CultureDemo/Src/cultureDemo/Classes/paimaiTableCell-ipad.m
+END
+dtCloudDelegate.h
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/pj_culture/!svn/ver/2/2011-10_CultureDemo/Src/cultureDemo/Classes/dtCloudDelegate.h
+END
+shareToSinaController.m
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/pj_culture/!svn/ver/2/2011-10_CultureDemo/Src/cultureDemo/Classes/shareToSinaController.m
+END
+dataBaseOperate.m
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/pj_culture/!svn/ver/2/2011-10_CultureDemo/Src/cultureDemo/Classes/dataBaseOperate.m
+END
+subSystemDetailController.m
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/pj_culture/!svn/ver/2/2011-10_CultureDemo/Src/cultureDemo/Classes/subSystemDetailController.m
+END
+ImageScrollView.h
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/pj_culture/!svn/ver/2/2011-10_CultureDemo/Src/cultureDemo/Classes/ImageScrollView.h
+END
+SecondDetailViewController.h
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/pj_culture/!svn/ver/2/2011-10_CultureDemo/Src/cultureDemo/Classes/SecondDetailViewController.h
+END
+newsDetailViewController.h
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/pj_culture/!svn/ver/2/2011-10_CultureDemo/Src/cultureDemo/Classes/newsDetailViewController.h
+END
+com_btn_checked@2x.png
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/pj_culture/!svn/ver/2/2011-10_CultureDemo/Src/cultureDemo/Classes/com_btn_checked@2x.png
+END
+ImageScrollView.m
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/pj_culture/!svn/ver/2/2011-10_CultureDemo/Src/cultureDemo/Classes/ImageScrollView.m
+END
+SecondDetailViewController.m
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/pj_culture/!svn/ver/2/2011-10_CultureDemo/Src/cultureDemo/Classes/SecondDetailViewController.m
+END
+myGuideController.xib
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/pj_culture/!svn/ver/2/2011-10_CultureDemo/Src/cultureDemo/Classes/myGuideController.xib
+END
+PhotoScrollerController.h
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/pj_culture/!svn/ver/2/2011-10_CultureDemo/Src/cultureDemo/Classes/PhotoScrollerController.h
+END
+newsDetailViewController.m
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/pj_culture/!svn/ver/2/2011-10_CultureDemo/Src/cultureDemo/Classes/newsDetailViewController.m
+END
+paimaiTableCell.xib
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/pj_culture/!svn/ver/2/2011-10_CultureDemo/Src/cultureDemo/Classes/paimaiTableCell.xib
+END
+meetingTableCell-ipad.xib
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/pj_culture/!svn/ver/2/2011-10_CultureDemo/Src/cultureDemo/Classes/meetingTableCell-ipad.xib
+END
+myGuideController.h
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/pj_culture/!svn/ver/2/2011-10_CultureDemo/Src/cultureDemo/Classes/myGuideController.h
+END
+PhotoScrollerController.m
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/pj_culture/!svn/ver/2/2011-10_CultureDemo/Src/cultureDemo/Classes/PhotoScrollerController.m
+END
+DetailViewDSFromFile.h
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/pj_culture/!svn/ver/2/2011-10_CultureDemo/Src/cultureDemo/Classes/DetailViewDSFromFile.h
+END
+meetingOpenViewController.h
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/pj_culture/!svn/ver/2/2011-10_CultureDemo/Src/cultureDemo/Classes/meetingOpenViewController.h
+END
+googleMapViewController.h
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/pj_culture/!svn/ver/2/2011-10_CultureDemo/Src/cultureDemo/Classes/googleMapViewController.h
+END
+meetingTableCell-ipad.h
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/pj_culture/!svn/ver/2/2011-10_CultureDemo/Src/cultureDemo/Classes/meetingTableCell-ipad.h
+END
+myGuideController.m
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/pj_culture/!svn/ver/2/2011-10_CultureDemo/Src/cultureDemo/Classes/myGuideController.m
+END
+DetailViewDSFromFile.m
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/pj_culture/!svn/ver/2/2011-10_CultureDemo/Src/cultureDemo/Classes/DetailViewDSFromFile.m
+END
+meetingOpenViewController.m
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/pj_culture/!svn/ver/2/2011-10_CultureDemo/Src/cultureDemo/Classes/meetingOpenViewController.m
+END
+googleMapViewController.m
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/pj_culture/!svn/ver/2/2011-10_CultureDemo/Src/cultureDemo/Classes/googleMapViewController.m
+END
+meetingTableCell-ipad.m
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/pj_culture/!svn/ver/2/2011-10_CultureDemo/Src/cultureDemo/Classes/meetingTableCell-ipad.m
+END
+cultureDemoAppDelegate.h
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/pj_culture/!svn/ver/2/2011-10_CultureDemo/Src/cultureDemo/Classes/cultureDemoAppDelegate.h
+END
+MBProgressHUD.h
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/pj_culture/!svn/ver/2/2011-10_CultureDemo/Src/cultureDemo/Classes/MBProgressHUD.h
+END
+cultureDemoAppDelegate.m
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/pj_culture/!svn/ver/2/2011-10_CultureDemo/Src/cultureDemo/Classes/cultureDemoAppDelegate.m
+END
+MBProgressHUD.m
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/pj_culture/!svn/ver/2/2011-10_CultureDemo/Src/cultureDemo/Classes/MBProgressHUD.m
+END
+ipadHomeTableCell.xib
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/pj_culture/!svn/ver/2/2011-10_CultureDemo/Src/cultureDemo/Classes/ipadHomeTableCell.xib
+END
+ShowListTableCell-ipad.xib
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/pj_culture/!svn/ver/2/2011-10_CultureDemo/Src/cultureDemo/Classes/ShowListTableCell-ipad.xib
+END
+DTNavigationController.h
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/pj_culture/!svn/ver/2/2011-10_CultureDemo/Src/cultureDemo/Classes/DTNavigationController.h
+END
+meetingTableCell.xib
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/pj_culture/!svn/ver/2/2011-10_CultureDemo/Src/cultureDemo/Classes/meetingTableCell.xib
+END
+SummaryViewController.h
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/pj_culture/!svn/ver/2/2011-10_CultureDemo/Src/cultureDemo/Classes/SummaryViewController.h
+END
+BECheckBox.h
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/pj_culture/!svn/ver/2/2011-10_CultureDemo/Src/cultureDemo/Classes/BECheckBox.h
+END
+paimaiViewController.h
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/pj_culture/!svn/ver/2/2011-10_CultureDemo/Src/cultureDemo/Classes/paimaiViewController.h
+END
+DTNavigationController.m
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/pj_culture/!svn/ver/2/2011-10_CultureDemo/Src/cultureDemo/Classes/DTNavigationController.m
+END
+guideTableCell.xib
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/pj_culture/!svn/ver/2/2011-10_CultureDemo/Src/cultureDemo/Classes/guideTableCell.xib
+END
+SummaryViewController.m
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/pj_culture/!svn/ver/2/2011-10_CultureDemo/Src/cultureDemo/Classes/SummaryViewController.m
+END
+DetailMainViewController.xib
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/pj_culture/!svn/ver/2/2011-10_CultureDemo/Src/cultureDemo/Classes/DetailMainViewController.xib
+END
+BECheckBox.m
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/pj_culture/!svn/ver/2/2011-10_CultureDemo/Src/cultureDemo/Classes/BECheckBox.m
+END
+paimaiViewController.m
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/pj_culture/!svn/ver/2/2011-10_CultureDemo/Src/cultureDemo/Classes/paimaiViewController.m
+END
+guideTableCell.h
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/pj_culture/!svn/ver/2/2011-10_CultureDemo/Src/cultureDemo/Classes/guideTableCell.h
+END
+newsSecondViewController.h
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/pj_culture/!svn/ver/2/2011-10_CultureDemo/Src/cultureDemo/Classes/newsSecondViewController.h
+END
+MapAnnotation.h
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/pj_culture/!svn/ver/2/2011-10_CultureDemo/Src/cultureDemo/Classes/MapAnnotation.h
+END
+subStyleController.xib
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/pj_culture/!svn/ver/2/2011-10_CultureDemo/Src/cultureDemo/Classes/subStyleController.xib
+END
+guideTableCell.m
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/pj_culture/!svn/ver/2/2011-10_CultureDemo/Src/cultureDemo/Classes/guideTableCell.m
+END
+guideTableCell-ipad.xib
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/pj_culture/!svn/ver/2/2011-10_CultureDemo/Src/cultureDemo/Classes/guideTableCell-ipad.xib
+END
+AppDelegate.h
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/pj_culture/!svn/ver/2/2011-10_CultureDemo/Src/cultureDemo/Classes/AppDelegate.h
+END
+com_btn_check.png
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/pj_culture/!svn/ver/2/2011-10_CultureDemo/Src/cultureDemo/Classes/com_btn_check.png
+END
+newsSecondViewController.m
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/pj_culture/!svn/ver/2/2011-10_CultureDemo/Src/cultureDemo/Classes/newsSecondViewController.m
+END
+MapAnnotation.m
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/pj_culture/!svn/ver/2/2011-10_CultureDemo/Src/cultureDemo/Classes/MapAnnotation.m
+END
+ShowListTableCell.xib
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/pj_culture/!svn/ver/2/2011-10_CultureDemo/Src/cultureDemo/Classes/ShowListTableCell.xib
+END
+shareToSinaController.xib
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/pj_culture/!svn/ver/2/2011-10_CultureDemo/Src/cultureDemo/Classes/shareToSinaController.xib
+END
+AppDelegate.m
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/pj_culture/!svn/ver/2/2011-10_CultureDemo/Src/cultureDemo/Classes/AppDelegate.m
+END
+TilingView.h
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/pj_culture/!svn/ver/2/2011-10_CultureDemo/Src/cultureDemo/Classes/TilingView.h
+END
+TilingView.m
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/pj_culture/!svn/ver/2/2011-10_CultureDemo/Src/cultureDemo/Classes/TilingView.m
+END

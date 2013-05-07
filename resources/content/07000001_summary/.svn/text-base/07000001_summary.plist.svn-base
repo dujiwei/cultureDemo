@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>mainTitle</key>
+	<string>北京名牌展会推荐</string>
+	<key>mainDescription</key>
+	<string></string>
+	<key>subItems</key>
+	<array>
+		<dict>
+			<key>imageName</key>
+			<string>0.png</string>
+			<key>subTitle</key>
+			<string>20届2012年中国国际服装服饰博览会CHIC</string>
+			<key>subDescription</key>
+			<string>中国国际服装服饰博览会(CHIC)由中国服装协会、中国国际贸易中心股份有限公司和中国国际贸易促进委员会纺织行业分会共同主办。创办于1993年，每年一届在北京举办。十九年来，CHIC伴随着中国服装产业的发展而不断壮大，已成长为亚洲地区最具规模与影响力的服装专业展会。</string>
+		</dict>
+		<dict>
+			<key>imageName</key>
+			<string>1.png</string>
+			<key>subTitle</key>
+			<string>历届展会回顾</string>
+			<key>subDescription</key>
+			<string>1993年开始，CHIC在中国国际贸易中心连续举办了5届,国际大师与国际品牌的到来,给还处于品牌发展萌芽期的中国服装业界，带来更多眼界的开。1998年，CHIC移师中国国际展览中心(旧馆)，十年间，CHIC主办单位围绕展会组织的专业提升及商贸系列活动的深入开展，使得CHIC的组织功能及服务体系更加专业与深入。2008年，CHIC转战北京·中国国际展览中心(新馆)，主办单位纵览全局，以”创意”为切入点，进行”突破和创新，转型与升级”。2011年，CHIC启动新的“发现”之旅，共吸引来自19个国家和地区的1000余个中外服装服饰品牌参展，同期成功举行活动60余场，逾11万名国内外专业观众到场参观，展商与专业观众借助CHIC的平台完美进行商贸对接。</string>
+		</dict>
+		<dict>
+			<key>imageName</key>
+			<string>2.png</string>
+			<key>subTitle</key>
+			<string>现场活动——中国服装汇</string>
+			<key>subDescription</key>
+			<string>* 中国服装发布汇“中国服装发布汇”是针对中国市场优秀品牌组织的系列商贸发布活动。完全采取国际化的运作方式，推崇针对媒体和买家的专业商贸发布；充分利用与“中国国际服装服饰博览会”同期同地的优势，将专业展会本身巨大的商贸功能和影响力 “深度服务”于参与的服装品牌企业，重在辅助品牌进行市场拓展和扩大其社会影响力</string>
+		</dict>
+		<dict>
+			<key>imageName</key>
+			<string>3.png</string>
+			<key>subTitle</key>
+			<string>现场活动——中国服装品牌年度大奖</string>
+			<key>subDescription</key>
+			<string>由中国服装协会主办的唯一面向中国自主服装品牌的大型表彰活动。</string>
+		</dict>
+	</array>
+</dict>
+</plist>

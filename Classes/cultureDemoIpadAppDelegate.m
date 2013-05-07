@@ -1,0 +1,46 @@
+//
+//  cultureDemoIpadAppDelegate.m
+//  cultureDemo
+//
+//  Created by dujw on 11-11-4.
+//  Copyright 2011 __MyCompanyName__. All rights reserved.
+//
+
+#import "cultureDemoIpadAppDelegate.h"
+
+#import "RootViewController.h"
+ 
+
+@implementation cultureDemoIpadAppDelegate 
+
+@synthesize window;
+@synthesize splitViewController;//,rootViewController,detailViewController;
+- (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {  
+	done = FALSE;
+	/*NSTimer *connectionTimer=[NSTimer scheduledTimerWithTimeInterval:1.5 target:self selector:@selector(timerFired:) userInfo:nil repeats:NO];
+    [[NSRunLoop currentRunLoop] addTimer: connectionTimer forMode:NSDefaultRunLoopMode];
+    do{
+        [[NSRunLoop currentRunLoop]runUntilDate:[NSDate dateWithTimeIntervalSinceNow:6.0]];
+    } while (!done);
+	*/
+    //得到类名
+    //Class class = self.class;
+   //char *aa =  class_getName(class);
+   // NSString *aa = [NSString stringWithFormat:@"%s", self.class];
+ //  [self.window addSubview:splitViewController.view];//--增加导览页面
+    self.window.rootViewController = splitViewController ;
+	
+	[self.window makeKeyAndVisible];
+	return YES;
+}
+-(void)timerFired:(NSTimer *)timer{
+	done = YES;
+}  
+- (void)dealloc {
+	[splitViewController release];
+    [window release];
+    [super dealloc];
+}
+
+
+@end

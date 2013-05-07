@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>mainTitle</key>
+	<string>北京市纪念建党90周年群众文化活动</string>
+	<key>mainDescription</key>
+	<string>“唱响中国，我心中的歌”2011北京合唱节</string>
+	<key>subItems</key>
+	<array>
+		<dict>
+			<key>imageName</key>
+			<string>0.png</string>
+			<key>subTitle</key>
+			<string>“唱响中国，我心中的歌”2011北京合唱节</string>
+			<key>subDescription</key>
+			<string>主办单位：北京市文化局          北京市文联承办单位：北京文化艺术活动中心          北京市音乐家协会活动时间：4月－12月底活动内容及特色：为庆祝中国共产党建党90周年暨纪念辛亥革命100周年，根据本单位工作情况，通过合唱节的形式，吟奏一曲凯歌，揭开那尘封的沙土，铺展出波澜壮阔的画卷，展现革命烈士生平，了解革命的历史事件，体会先辈们艰苦的革命历程。　　举办“岁月如歌—红歌长征”北京市群众合唱节 ，号召各参赛队放声歌唱，歌唱中国共产党好、社会主义好、伟大祖国好、伟大人民好、改革开放好，歌唱建党90周年的伟大成果，歌唱革命事业的辉煌成就，用歌声鼓舞士气，用歌声抒发豪情，唱响主旋律，展示新风采，再创新辉煌！　　此次比赛是为了庆祝中国共产党建党90周年暨纪念辛亥革命100周年系列活动之一，也是全市红歌大合唱比赛的选拔赛。以饱满的热情、严格的纪律投入到比赛的准备当中，展现了北京广大群众服从大局、团结奋进的良好精神风貌。比赛的举行，进一步凝聚了人心，鼓舞了士气，为推进北京文化事业科学发展、加快发展营造了良好氛围。	</string>
+		</dict>
+		<dict>
+			<key>imageName</key>
+			<string>1.png</string>
+			<key>subTitle</key>
+			<string>“唱响中国，我心中的歌”2011北京合唱节照片集锦</string>
+			<key>subDescription</key>
+			<string></string>
+		</dict>
+		<dict>
+			<key>imageName</key>
+			<string>2.png</string>
+			<key>subTitle</key>
+			<string>“唱响中国，我心中的歌”2011北京合唱节照片集锦</string>
+			<key>subDescription</key>
+			<string></string>
+		</dict>
+		<dict>
+			<key>imageName</key>
+			<string>3.png</string>
+			<key>subTitle</key>
+			<string>“唱响中国，我心中的歌”2011北京合唱节照片集锦</string>
+			<key>subDescription</key>
+			<string></string>
+		</dict>
+	</array>
+</dict>
+</plist>

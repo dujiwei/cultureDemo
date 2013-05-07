@@ -1,0 +1,332 @@
+//
+//  dataBaseOperate.m
+//  cultureDemo
+//
+//  Created by dujw on 11-11-1.
+//  Copyright 2011 __MyCompanyName__. All rights reserved.
+//
+
+#import "dataBaseOperate.h"
+#import <sqlite3.h>
+static sqlite3 *database = NULL;
+sqlite3 *Database(void)
+{
+    NSCAssert2([NSThread isMainThread], @"%s at line %d called on secondary thread", __FUNCTION__, __LINE__);
+    if (database == NULL) {
+        // First, test for existence.
+        BOOL success;
+        NSFileManager *fileManager = [NSFileManager defaultManager];
+        NSError *error;
+        NSArray *paths = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES);
+		
+        NSString *documentsDirectory = [paths objectAtIndex:0];
+		
+        NSString *writableDBPath = [documentsDirectory stringByAppendingPathComponent:@"detailData.sqlite"];
+        if ([fileManager fileExistsAtPath:writableDBPath] == NO) {
+            // The writable database does not exist, so copy the default to the appropriate location.
+			
+            NSString *defaultDBPath = [[NSBundle mainBundle] pathForResource:@"detailData" ofType:@"sqlite"];
+            success = [fileManager copyItemAtPath:defaultDBPath toPath:writableDBPath error:&error];
+            if (!success) {
+                NSCAssert1(0, @"Failed to create writable database file with message '%@'.", [error localizedDescription]);
+            }
+        }
+		 NSString *defaultDBPath = [[NSBundle mainBundle] pathForResource:@"detailData" ofType:@"sqlite"];
+        // Open the database. The database was prepared outside the application.
+        if (sqlite3_open([defaultDBPath UTF8String], &database) != SQLITE_OK) {
+            // Even though the open failed, call close to properly clean up resources.
+			
+            sqlite3_close(database);
+            database = NULL;
+            NSCAssert1(0, @"Failed to open database with message '%s'.", sqlite3_errmsg(database));
+            // Additional error handling, as appropriate...
+        }
+    }
+    return database;
+}
+void closeDatabase()
+{
+    if (database == NULL) return;
+    // Close the database.
+    if (sqlite3_close(database) != SQLITE_OK) {
+        NSCAssert1(0, @"Error: failed to close database with message '%s'.", sqlite3_errmsg(database));
+    }
+    database = NULL;
+
+};
+BOOL createDetailDataTable (void) ////用于初次创建用，
+{
+	sqlite3 *db = Database();
+	char *sql = "create table if not exists DetailDataTable" 
+	            "(subCode text, subTitle text, subStyle text, mainStyle text, imageName text, shareGrade text,"
+	            "gradeCount text ,isMyPack text,isDownLoad text)";
+	sqlite3_stmt *statement;
+	/*数据表结构：subCode(场景编码),subTitle(场景名称),subStyle(场景所属中类，例如：0201)，mainStyle(所属大类，例如02)
+	imageName(代表的image图标名称),shareGrade(用户评测平均分)，(gradeCount)评分次数，isMypack(是否加入到我的导览），isDownLoad(是否下载)。*/
+	
+	
+	NSInteger sqlReturn = sqlite3_prepare_v2(db, sql, -1, &statement, nil);
+	if(sqlReturn != SQLITE_OK) {
+		NSCAssert1(0,@"Error: failed to prepare statement:create DetailDataTable with message '%d'.",sqlReturn);
+		return NO;
+	}
+	NSInteger success = sqlite3_step(statement);
+	sqlite3_finalize(statement);
+	if ( success != SQLITE_DONE) {
+		NSCAssert1(0,@"Error: failed to dehydrate:create DetailDataTable with message '%d'.",success);
+		return NO;
+	}
+	
+	return YES;
+}
+
+NSArray* getDetailDataOfSubStyle(NSString * subStyle)//根据选中的substyle，遍历处所有的subTitle信息
+{
+    sqlite3 *db = Database();
+//	createDetailDataTable();
+
+	sqlite3_stmt *statement =NULL;
+    if (statement == NULL) {
+        // Prepare (compile) the SQL statement
+        static const char *sql = "SELECT subCode,subTitle,subStyle,mainStyle,imageName,shareGrade,"
+								 "gradeCount,isMyPack,isDownload  FROM DetailDataTable WHERE subStyle = ?";
+      
+		if (sqlite3_prepare_v2(db, sql, -1, &statement, NULL) != SQLITE_OK) {
+            NSCAssert1(0, @"Error: failed to prepare statement with message '%s'.", sqlite3_errmsg(db));
+        }
+    }
+    // Bind the parser type to the statement.  指定subStyle的查询值
+	if (sqlite3_bind_text(statement, 1, [subStyle UTF8String], -1, SQLITE_TRANSIENT)!=SQLITE_OK)
+    {
+        NSCAssert1(0, @"Error: failed to bind variable with message '%s'.", sqlite3_errmsg(db));
+    }
+    // Execute the query.
+	//查询结果集中一条一条的遍历所有的记录，这里的数字对应的是列值。
+	NSMutableDictionary* rowDict;
+	NSMutableArray *tempArray = [[NSMutableArray alloc] initWithCapacity:50];
+	while (sqlite3_step(statement) == SQLITE_ROW) {
+	    rowDict = [[NSMutableDictionary alloc] initWithCapacity:10];
+		[rowDict setObject:[NSString stringWithUTF8String:(char *) sqlite3_column_text(statement, 0)] forKey:kSubCodeKey];
+		[rowDict setObject:[NSString stringWithUTF8String:(char *) sqlite3_column_text(statement, 1)] forKey:kMainTitleKey];
+		//[rowDict setObject:[NSString stringWithUTF8String:(char *) sqlite3_column_text(statement, 2)] forKey:@"SubStyle"];
+		[rowDict setObject:[NSString stringWithUTF8String:(char *) sqlite3_column_text(statement, 3)] forKey:@"mainStyle"];
+		//这2歌数据暂时不取。目前来看没有用处
+		[rowDict setObject:[NSString stringWithUTF8String:(char *) sqlite3_column_text(statement, 4)] forKey:kMainImageNameKey];
+		[rowDict setObject:[NSString stringWithUTF8String:(char *) sqlite3_column_text(statement, 5)] forKey:kScoreKey];
+		[rowDict setObject:[NSString stringWithUTF8String:(char *) sqlite3_column_text(statement, 6)] forKey:kGradeCountKey];
+		[rowDict setObject:[NSString stringWithUTF8String:(char *) sqlite3_column_text(statement, 7)] forKey:kSubImageKey];
+		[rowDict setObject:[NSString stringWithUTF8String:(char *) sqlite3_column_text(statement, 8)] forKey:kThirdImageKey];
+		
+		[tempArray addObject:rowDict];
+	}
+    // Reset the query for the next use.
+    //sqlite3_reset(statement);
+	sqlite3_finalize(statement);
+	closeDatabase();
+    return [tempArray retain];
+}
+
+NSArray* myPackDataOfSubStyle (NSString * isMyPack)//根据是否设置了我的导览，遍历处所有的subTitle信息，再我的导览里面显示。
+{
+    sqlite3 *db = Database();
+	//	createDetailDataTable();
+	
+	sqlite3_stmt *statement =NULL;
+    if (statement == NULL) {
+        // Prepare (compile) the SQL statement
+        static const char *sql = "SELECT subCode,subTitle,subStyle,mainStyle,imageName,shareGrade,"
+		"gradeCount,isMyPack,isDownload  FROM DetailDataTable WHERE isMyPack = ?";
+		
+		if (sqlite3_prepare_v2(db, sql, -1, &statement, NULL) != SQLITE_OK) {
+            NSCAssert1(0, @"Error: failed to prepare statement with message '%s'.", sqlite3_errmsg(db));
+        }
+    }
+    // Bind the parser type to the statement.
+	if (sqlite3_bind_text(statement, 1, [isMyPack UTF8String], -1, SQLITE_TRANSIENT)!=SQLITE_OK)
+    {
+        NSCAssert1(0, @"Error: failed to bind variable with message '%s'.", sqlite3_errmsg(db));
+    }
+    // Execute the query.
+	//查询结果集中一条一条的遍历所有的记录，这里的数字对应的是列值。
+	NSMutableDictionary* rowDict;
+	NSMutableArray *tempArray = [[NSMutableArray alloc] initWithCapacity:50];
+	while (sqlite3_step(statement) == SQLITE_ROW) {
+	    rowDict = [[NSMutableDictionary alloc] initWithCapacity:10];
+		[rowDict setObject:[NSString stringWithUTF8String:(char *) sqlite3_column_text(statement, 0)] forKey:kSubCodeKey];
+		[rowDict setObject:[NSString stringWithUTF8String:(char *) sqlite3_column_text(statement, 1)] forKey:kMainTitleKey];
+		//[rowDict setObject:[NSString stringWithUTF8String:(char *) sqlite3_column_text(statement, 2)] forKey:@"SubStyle"];
+		[rowDict setObject:[NSString stringWithUTF8String:(char *) sqlite3_column_text(statement, 3)] forKey:@"mainStyle"];
+		//这2歌数据暂时不取。目前来看没有用处
+		[rowDict setObject:[NSString stringWithUTF8String:(char *) sqlite3_column_text(statement, 4)] forKey:kMainImageNameKey];
+		[rowDict setObject:[NSString stringWithUTF8String:(char *) sqlite3_column_text(statement, 5)] forKey:kScoreKey];
+		[rowDict setObject:[NSString stringWithUTF8String:(char *) sqlite3_column_text(statement, 6)] forKey:kGradeCountKey];
+		[rowDict setObject:[NSString stringWithUTF8String:(char *) sqlite3_column_text(statement, 7)] forKey:kSubImageKey];
+		[rowDict setObject:[NSString stringWithUTF8String:(char *) sqlite3_column_text(statement, 8)] forKey:kThirdImageKey];
+		
+		[tempArray addObject:rowDict];
+	}
+    // Reset the query for the next use.
+    //sqlite3_reset(statement);
+	sqlite3_finalize(statement);
+	//NSLog(@"tempA  %@",tempArray.description);
+	closeDatabase();
+    return [tempArray retain];
+}
+
+// only for 演出剧目
+NSArray* getDetailDataOfShow(NSString * subStyle)//根据选中的substyle，遍历处所有的subTitle信息
+{
+    sqlite3 *db = Database();
+	//	createDetailDataTable();
+	
+	sqlite3_stmt *statement =NULL;
+    if (statement == NULL) {
+        // Prepare (compile) the SQL statement
+        static const char *sql = "SELECT subCode,subTitle,subStyle,mainStyle,imageName,shareGrade,"
+		"gradeCount,duration,director,artist,description,theatreId,theatreName  FROM DetailDataForShowTable WHERE subStyle = ?";
+		
+		if (sqlite3_prepare_v2(db, sql, -1, &statement, NULL) != SQLITE_OK) {
+            NSCAssert1(0, @"Error: failed to prepare statement with message '%s'.", sqlite3_errmsg(db));
+        }
+    }
+    // Bind the parser type to the statement.
+	if (sqlite3_bind_text(statement, 1, [subStyle UTF8String], -1, SQLITE_TRANSIENT)!=SQLITE_OK)
+    {
+        NSCAssert1(0, @"Error: failed to bind variable with message '%s'.", sqlite3_errmsg(db));
+    }
+    // Execute the query.
+	//查询结果集中一条一条的遍历所有的记录，这里的数字对应的是列值。
+	NSMutableDictionary* rowDict;
+	NSMutableArray *tempArray = [[NSMutableArray alloc] initWithCapacity:50];
+	char * sz = NULL;
+	while (sqlite3_step(statement) == SQLITE_ROW) {
+	    rowDict = [[NSMutableDictionary alloc] initWithCapacity:13];
+		sz = (char *) sqlite3_column_text(statement, 0);
+		[rowDict setObject:[NSString stringWithUTF8String:(sz ? sz : "")] forKey:kSubCodeKey];
+		sz = (char *) sqlite3_column_text(statement, 1);
+		[rowDict setObject:[NSString stringWithUTF8String:(sz ? sz : "")] forKey:kMainTitleKey];
+		sz = (char *) sqlite3_column_text(statement, 2);
+		//[rowDict setObject:[NSString stringWithUTF8String:(sz ? sz : "")] forKey:@"SubStyle"];
+		sz = (char *) sqlite3_column_text(statement, 3);
+		//[rowDict setObject:[NSString stringWithUTF8String:(sz ? sz : "")] forKey:@"mainStyle"];
+		//这2歌数据暂时不取。目前来看没有用处
+		sz = (char *) sqlite3_column_text(statement, 4);
+		[rowDict setObject:[NSString stringWithUTF8String:(sz ? sz : "")] forKey:kMainImageNameKey];
+		sz = (char *) sqlite3_column_text(statement, 5);
+		[rowDict setObject:[NSString stringWithUTF8String:(sz ? sz : "")] forKey:kScoreKey];
+		sz = (char *) sqlite3_column_text(statement, 6);
+		[rowDict setObject:[NSString stringWithUTF8String:(sz ? sz : "")] forKey:kGradeCountKey];
+		sz = (char *) sqlite3_column_text(statement, 7);
+		[rowDict setObject:[NSString stringWithUTF8String:(sz ? sz : "")] forKey:kDuration];
+		sz = (char *) sqlite3_column_text(statement, 8);
+		[rowDict setObject:[NSString stringWithUTF8String:(sz ? sz : "")] forKey:kDirector];
+		sz = (char *) sqlite3_column_text(statement, 9);
+		[rowDict setObject:[NSString stringWithUTF8String:(sz ? sz : "")] forKey:kArtist];
+		sz = (char *) sqlite3_column_text(statement, 10);
+		[rowDict setObject:[NSString stringWithUTF8String:(sz ? sz : "")] forKey:kDescription];
+		sz = (char *) sqlite3_column_text(statement, 11);
+		[rowDict setObject:[NSString stringWithUTF8String:(sz ? sz : "")] forKey:kTheatreId];
+		sz = (char *) sqlite3_column_text(statement, 12);
+		[rowDict setObject:[NSString stringWithUTF8String:(sz ? sz : "")] forKey:kTheatreName];
+		
+		[tempArray addObject:rowDict];
+	}
+    // Reset the query for the next use.
+    //sqlite3_reset(statement);
+	sqlite3_finalize(statement);
+	closeDatabase();
+    return [tempArray retain];
+}
+NSArray* meetingDataOfmainStyle (NSString * _mainStyle)//根据会展情况，直接根据mainstyle展现出所有的会展情况。
+{
+    sqlite3 *db = Database();
+	//	createDetailDataTable();
+	
+	sqlite3_stmt *statement =NULL;
+    if (statement == NULL) {
+        // Prepare (compile) the SQL statement
+        static const char *sql = "SELECT subCode,subTitle,subStyle,mainStyle,imageName,shareGrade,"
+		"gradeCount,isMyPack,isDownload  FROM DetailDataTable WHERE mainStyle = ?";
+		
+		if (sqlite3_prepare_v2(db, sql, -1, &statement, NULL) != SQLITE_OK) {
+            NSCAssert1(0, @"Error: failed to prepare statement with message '%s'.", sqlite3_errmsg(db));
+        }
+    }
+    // Bind the parser type to the statement.
+	if (sqlite3_bind_text(statement, 1, [_mainStyle UTF8String], -1, SQLITE_TRANSIENT)!=SQLITE_OK)
+    {
+        NSCAssert1(0, @"Error: failed to bind variable with message '%s'.", sqlite3_errmsg(db));
+    }
+    // Execute the query.
+	//查询结果集中一条一条的遍历所有的记录，这里的数字对应的是列值。
+	NSMutableDictionary* rowDict;
+	NSMutableArray *tempArray = [[NSMutableArray alloc] initWithCapacity:50];
+	while (sqlite3_step(statement) == SQLITE_ROW) {
+	    rowDict = [[NSMutableDictionary alloc] initWithCapacity:10];
+		[rowDict setObject:[NSString stringWithUTF8String:(char *) sqlite3_column_text(statement, 0)] forKey:kSubCodeKey];
+		[rowDict setObject:[NSString stringWithUTF8String:(char *) sqlite3_column_text(statement, 1)] forKey:kMainTitleKey];
+		[rowDict setObject:[NSString stringWithUTF8String:(char *) sqlite3_column_text(statement, 2)] forKey:@"SubStyle"];
+		[rowDict setObject:[NSString stringWithUTF8String:(char *) sqlite3_column_text(statement, 3)] forKey:@"mainStyle"];
+		//这2歌数据暂时不取。目前来看没有用处
+		[rowDict setObject:[NSString stringWithUTF8String:(char *) sqlite3_column_text(statement, 4)] forKey:kMainImageNameKey];
+		[rowDict setObject:[NSString stringWithUTF8String:(char *) sqlite3_column_text(statement, 5)] forKey:kScoreKey];
+		[rowDict setObject:[NSString stringWithUTF8String:(char *) sqlite3_column_text(statement, 6)] forKey:kGradeCountKey];
+		[rowDict setObject:[NSString stringWithUTF8String:(char *) sqlite3_column_text(statement, 7)] forKey:kSubImageKey];
+		[rowDict setObject:[NSString stringWithUTF8String:(char *) sqlite3_column_text(statement, 8)] forKey:kThirdImageKey];
+		
+		[tempArray addObject:rowDict];
+	}
+    // Reset the query for the next use.
+    //sqlite3_reset(statement);
+	sqlite3_finalize(statement);
+	//NSLog(@"tempA  %@",tempArray.description);
+	closeDatabase();
+    return [tempArray retain];
+}
+NSArray* baseDataOfMainStyle (NSString * _mainStyle)//根据会展情况，直接根据mainstyle展现出所有的会展情况。
+{
+    sqlite3 *db = Database();
+	//	createDetailDataTable();
+	
+	sqlite3_stmt *statement =NULL;
+    if (statement == NULL) {
+        // Prepare (compile) the SQL statement
+        static const char *sql = "SELECT subCode,subTitle,subStyle,mainStyle,imageName,description,"
+		"updateDate  FROM DetailDataForBaseTable WHERE mainStyle = ?";
+		
+		if (sqlite3_prepare_v2(db, sql, -1, &statement, NULL) != SQLITE_OK) {
+            NSCAssert1(0, @"Error: failed to prepare statement with message '%s'.", sqlite3_errmsg(db));
+        }
+    }
+    // Bind the parser type to the statement.
+	if (sqlite3_bind_text(statement, 1, [_mainStyle UTF8String], -1, SQLITE_TRANSIENT)!=SQLITE_OK)
+    {
+        NSCAssert1(0, @"Error: failed to bind variable with message '%s'.", sqlite3_errmsg(db));
+    }
+    // Execute the query.
+	//查询结果集中一条一条的遍历所有的记录，这里的数字对应的是列值。
+	NSMutableDictionary* rowDict;
+	NSMutableArray *tempArray = [[NSMutableArray alloc] initWithCapacity:50];
+	while (sqlite3_step(statement) == SQLITE_ROW) {
+	    rowDict = [[NSMutableDictionary alloc] initWithCapacity:10];
+		[rowDict setObject:[NSString stringWithUTF8String:(char *) sqlite3_column_text(statement, 0)] forKey:kSubCodeKey];
+		[rowDict setObject:[NSString stringWithUTF8String:(char *) sqlite3_column_text(statement, 1)] forKey:kMainTitleKey];
+		[rowDict setObject:[NSString stringWithUTF8String:(char *) sqlite3_column_text(statement, 2)] forKey:@"SubStyle"];
+		[rowDict setObject:[NSString stringWithUTF8String:(char *) sqlite3_column_text(statement, 3)] forKey:@"mainStyle"];
+		//这2歌数据暂时不取。目前来看没有用处
+		[rowDict setObject:[NSString stringWithUTF8String:(char *) sqlite3_column_text(statement, 4)] forKey:kMainImageNameKey];
+		[rowDict setObject:[NSString stringWithUTF8String:(char *) sqlite3_column_text(statement, 5)] forKey:kScoreKey];
+		[rowDict setObject:[NSString stringWithUTF8String:(char *) sqlite3_column_text(statement, 6)] forKey:kGradeCountKey];
+		 
+		[tempArray addObject:rowDict];
+	}
+    // Reset the query for the next use.
+    //sqlite3_reset(statement);
+	sqlite3_finalize(statement);
+	//NSLog(@"tempA  %@",tempArray.description);
+	closeDatabase();
+    return [tempArray retain];
+}
+
+
+

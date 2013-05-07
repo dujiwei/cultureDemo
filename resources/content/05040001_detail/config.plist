@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>05040001</key>
+	<dict>
+		<key>Title</key>
+		<string>全聚德</string>
+		<key>GuideMapTitle</key>
+		<string>饭店分布</string>
+		<key>width</key>
+		<integer>0</integer>
+		<key>height</key>
+		<integer>0</integer>
+		<key>SubListTitle</key>
+		<string>菜品</string>
+		<key>SubList</key>
+		<array>
+			<dict>
+				<key>Title</key>
+				<string>全聚德烤鸭</string>
+			</dict>
+			<dict>
+				<key>Title</key>
+				<string>芥末鸭掌</string>
+			</dict>
+			<dict>
+				<key>Title</key>
+				<string>火燎鸭心</string>
+			</dict>
+			<dict>
+				<key>Title</key>
+				<string>卤水鸭肝</string>
+			</dict>
+		</array>
+		<key>InfoPages</key>
+		<array>
+			<dict>
+				<key>Title</key>
+				<string>世界最大的烤鸭店—北京全聚德和平门店</string>
+				<key>Content</key>
+				<string>1.html</string>
+			</dict>
+			<dict>
+				<key>Title</key>
+				<string>“全聚德”品牌的起源店—北京全聚德前门店</string>
+				<key>Content</key>
+				<string>2.html</string>
+			</dict>
+			<dict>
+				<key>Title</key>
+				<string>百年圣火北京迎奥运 百年炉火老店展新颜—全聚德奥运村店
+</string>
+				<key>Content</key>
+				<string>3.html</string>
+			</dict>
+			<dict>
+				<key>Title</key>
+				<string>电话订餐流程图</string>
+				<key>Content</key>
+				<string>4.html</string>
+			</dict>
+		</array>
+	</dict>
+</dict>
+</plist>

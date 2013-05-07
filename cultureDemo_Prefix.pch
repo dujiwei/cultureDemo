@@ -1,0 +1,19 @@
+//
+// Prefix header for all source files of the 'cultureDemo' target in the 'cultureDemo' project
+//
+
+#ifdef __OBJC__
+    #import <Foundation/Foundation.h>
+    #import <UIKit/UIKit.h>
+#endif
+
+#define DETAIL_SUB_CONTAINER_MARGIN 5
+
+#define SHOULD_AUTOROTATE_TO_INTERFACE_ORIENTATION(interfaceOrientation) \
+((UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPad) ? \
+((interfaceOrientation == UIInterfaceOrientationLandscapeLeft) \
+|| (interfaceOrientation == UIInterfaceOrientationLandscapeRight)) \
+: \
+(interfaceOrientation == UIInterfaceOrientationPortrait) \
+) \
+

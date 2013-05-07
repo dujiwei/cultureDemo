@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>03080001</key>
+	<dict>
+		<key>Title</key>
+		<string>中国杂技团六十华诞献礼视幻巨作《天地宝藏》</string>
+		<key>SubListTitle</key>
+		<string></string>
+		<key>SubList</key>
+		<array/>
+		<key>InfoPages</key>
+		<array>
+			<dict>
+				<key>Title</key>
+				<string>演出信息</string>
+				<key>Content</key>
+				<string>1.html</string>
+			</dict>
+			<dict>
+				<key>Title</key>
+				<string>中国杂技团六十华诞献礼视幻巨作《天地宝藏》</string>
+				<key>Content</key>
+				<string>2.html</string>
+			</dict>
+			<dict>
+				<key>Title</key>
+				<string>中国杂技团献礼晚会天地宝藏--详细介绍</string>
+				<key>Content</key>
+				<string>3.html</string>
+			</dict>
+			<dict>
+				<key>Title</key>
+				<string>《天地宝藏》节目单</string>
+				<key>Content</key>
+				<string>4.html</string>
+			</dict>
+		</array>
+	</dict>
+</dict>
+</plist>

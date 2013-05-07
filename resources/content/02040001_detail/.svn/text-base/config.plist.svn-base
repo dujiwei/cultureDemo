@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>02040001</key>
+	<dict>
+		<key>Title</key>
+		<string>中国美术馆</string>
+		<key>GuideMapTitle</key>
+		<string>中国美术馆地图</string>
+		<key>width</key>
+		<integer>0</integer>
+		<key>height</key>
+		<integer>0</integer>
+		<key>SubListTitle</key>
+		<string>中国美术馆作品</string>
+		<key>SubList</key>
+		<array>
+			<dict>
+				<key>Title</key>
+				<string>展览——天山南北——中国美术作品展</string>
+			</dict>
+			<dict>
+				<key>Title</key>
+				<string>馆藏——国画</string>
+			</dict>
+			<dict>
+				<key>Title</key>
+				<string>公共教育—学术讲座</string>
+			</dict>
+			<dict>
+				<key>Title</key>
+				<string>出版物</string>
+			</dict>
+		</array>
+		<key>InfoPages</key>
+		<array>
+			<dict>
+				<key>Title</key>
+				<string>开放时间</string>
+				<key>Content</key>
+				<string>1.html</string>
+			</dict>
+			<dict>
+				<key>Title</key>
+				<string>服务设施</string>
+				<key>Content</key>
+				<string>2.html</string>
+			</dict>
+			<dict>
+				<key>Title</key>
+				<string>位置交通</string>
+				<key>Content</key>
+				<string>3.html</string>
+			</dict>
+			<dict>
+				<key>Title</key>
+				<string>免费参观方法</string>
+				<key>Content</key>
+				<string>4.html</string>
+			</dict>
+		</array>
+	</dict>
+</dict>
+</plist>

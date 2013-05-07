@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>mainTitle</key>
+	<string>北京大学</string>
+	<key>mainDescription</key>
+	<string>感受中国最高学府</string>
+	<key>subItems</key>
+	<array>
+		<dict>
+			<key>imageName</key>
+			<string>1.png</string>
+			<key>subTitle</key>
+			<string>学校概况</string>
+			<key>subDescription</key>
+			<string>北京大学，简称北大，创办于1898年，初名京师大学堂，是中国近代第一所国立大学，被公认为中国的最高学府，也是亚洲和世界最重要的大学之一。在中国现代史上，北大是中国“新文化运动”与“五四运动”等运动的中心发祥地，也是多种政治思潮和社会理想在中国的最早传播地，有“中国政治晴雨表”之称，享有极高的声誉和重要的地位。</string>
+		</dict>
+		<dict>
+			<key>imageName</key>
+			<string>2.png</string>
+			<key>subTitle</key>
+			<string>北大校徽</string>
+			<key>subDescription</key>
+			<string>校徽突出一个办学理念，即大学要“以人为本”。大学，因大师而大，更因大学生而大。也有人说，上面的是学生，下面的是老师，教师就是要甘为人梯；学生站在巨人的肩膀上，就是要青出于蓝胜于蓝。北大的许智宏校长说，真正的“大”学，学术之大，责任之大，精神之大，尽在其中。许多毕业了多年的北大学生回想起来，都不约而同地提到，北大给学子们最宝贵的是“自由独立，兼容并蓄”的精神。</string>
+		</dict>
+		<dict>
+			<key>imageName</key>
+			<string>3.png</string>
+			<key>subTitle</key>
+			<string>北大的前身—京师大学堂</string>
+			<key>subDescription</key>
+			<string>光绪二十四年（1898）6月11日，光绪帝颁布《明定国是诏》，正式提出要兴办京师大学堂。同年7月3日，京师大学堂在孙家鼐的主持下在北京创立，最初校址在北京景山东街（马神庙）和沙滩（故宫的东北）红楼（北京五四大街29号）等处。京师大学堂是中国近代正式设立的第一所大学。1900年，八国联军侵华，打入北京后，京师大学堂遭受破坏。1902年12月，京师大学堂恢复。吏部尚书张百熙任管学大臣。吴汝纶和辜鸿铭任正副总教习，严复和林纾分任大学堂译书局总办和副总办。创办于1862年洋务运动期间的京师同文馆也并入大学堂。1904年选派首批47名学生出国留学。 　　自国子监和科举制度取消、京师大学堂成立以后，京师大学堂即成为中国惟一最高学府和最高教育管理机构，加上各方最优秀之士子大部分均投身京师大学堂，从职能、学统等方面均显示出京师大学堂与国子监之间的传承。因此，很多学者如胡适、季羡林、冯友兰、周培源、任继愈、萧超然等都认为，京师大学堂（北京大学）是中国自汉代太学以来国家最高学府的唯一正统继承者，甚至北大的历史可以因此上溯到两千多年前汉武帝设立太学之时。</string>
+		</dict>
+		<dict>
+			<key>imageName</key>
+			<string>4.png</string>
+			<key>subTitle</key>
+			<string>学风校训</string>
+			<key>subDescription</key>
+			<string>学风： 　　勤奋 严谨 求实 创新 校风： 　　爱国 进步 民主 科学 　　校训： 　　盛传的校训有两个：一是为人所熟知的“思想自由、兼容并包”；二是“爱国 进步 民主 科学”。</string>
+		</dict>
+	</array>
+</dict>
+</plist>

@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>mainTitle</key>
+	<string>北京非遗</string>
+	<key>mainDescription</key>
+	<string>北京非物质文化遗产介绍</string>
+	<key>subItems</key>
+	<array>
+		<dict>
+			<key>imageName</key>
+			<string>1.jpg</string>
+			<key>subTitle</key>
+			<string>民间文学</string>
+			<key>subDescription</key>
+			<string>§ 北京童谣  § 颐和园传说  § 圆明园传说  § 香山传说  § 八达岭长城传说  § 卢沟桥传说  § 永定河传说  § 八大处传说  § 张镇灶王爷传说  § 仁义胡同传说  § 轩辕黄帝传说  § 杨家将（穆桂英）传说 </string>
+		</dict>
+		<dict>
+			<key>imageName</key>
+			<string>2.jpg</string>
+			<key>subTitle</key>
+			<string>民间音乐</string>
+			<key>subDescription</key>
+			<string>§ 智化寺京音乐  § 天坛神乐署中和韶乐  § 京西幡乐  § 通州运河船工号子  § 顺义曾庄大鼓  § 白庙村音乐会  § 白纸坊挎鼓  § 漆园村龙鼓 </string>
+		</dict>
+		<dict>
+			<key>imageName</key>
+			<string>3.jpg</string>
+			<key>subTitle</key>
+			<string>民间舞蹈</string>
+			<key>subDescription</key>
+			<string>§ 京西太平鼓  § 延庆旱船  § 北京杠箱  § 昌平后牛坊村花钹大鼓  § 石景山太平鼓  § 密云蝴蝶会  § 怪村太平鼓  § 杨镇龙灯会  § 米粮屯高跷  § 上金山狮舞  § 太子务武吵子  § 海淀扑蝴蝶  § 公议庄五虎少林会  § 西北旺少林五虎棍  § 白纸坊太狮  § 大栅栏五斗斋高跷秧歌  § 沙峪村竹马  § 通州运河龙灯  § 门头沟龙泉务童子大鼓 </string>
+		</dict>
+		<dict>
+			<key>imageName</key>
+			<string>4.jpg</string>
+			<key>subTitle</key>
+			<string>传统戏剧</string>
+			<key>subDescription</key>
+			<string>§ 评剧  § 北京皮影  § 西斋堂山梆子戏  § 苇子水秧歌戏  § 淤白村蹦蹦戏  § 昆曲  § 京剧  § 河北梆子  § 大兴诗赋弦  § 柏峪秧歌戏 </string>
+		</dict>
+		<dict>
+			<key>imageName</key>
+			<string>5.jpg</string>
+			<key>subTitle</key>
+			<string>北京曲艺</string>
+			<key>subDescription</key>
+			<string>§ 北京评书  § 北京琴书  § 联珠快书  § 相声  § 岔曲  § 单弦  § 京韵大鼓  § 密云菜家洼村五音大鼓  § 平谷调 </string>
+		</dict>
+		<dict>
+			<key>imageName</key>
+			<string>6.jpg</string>
+			<key>subTitle</key>
+			<string>传统手工技艺</string>
+			<key>subDescription</key>
+			<string>§ 北京金漆镶嵌制作技艺  § 北京花丝镶嵌制作技艺  § 北京花丝镶嵌制作技艺  § 北京宫毯织造技艺  § “京作”硬木家具制作技艺  § 王麻子剪刀锻制技艺  § 北京戏装制作技艺  § 京剧盔头制作技艺  § 北京哈氏风筝制作技艺  § 扎燕风筝制作技艺  § 戴月轩湖笔制作技艺  § 一得阁墨汁制作技艺  § 荣宝斋装裱修复技艺  § 肄雅堂古籍修复技艺  § 潭柘紫石砚雕刻技艺  § 琉璃渠琉璃制作技艺  § 孙氏祖传糕点模具制作技艺  § 鲁班枕（瞎掰）制作技艺  § 红都中山装制作技艺  § 京式旗袍传统制作技艺  § 瑞蚨祥中式服装手工制作技艺  § 盛锡福皮帽制作技艺  § 马聚源手工制帽技艺  § 内联升手工布鞋制作技艺  § 绣花鞋工艺（王冠琴）  § 六必居酱菜制作技艺  § 王致和腐乳酿造技艺  § 张一元茉莉花茶窨制工艺  § 北京二锅头酒酿制技艺  § 牛栏山二锅头传统酿制技艺  § “菊花白”酒酿制技艺  § 天福号酱肘子制作技艺  § 月盛斋酱烧牛羊肉制作技艺  § 鸿宾楼全羊席制作技艺  § 北京烤肉制作技艺  § 壹条龙清真涮羊肉技艺  § “厨子舍”清真菜民间宴席制作技艺  § 都一处烧麦制作技艺  § 板栗栽培技术  § 景泰蓝制作技艺  § 聚元号弓箭制作技艺  § 木版水印技艺  § 雕漆技艺  § 全聚德挂炉烤鸭技艺  § 便宜坊焖炉烤鸭技艺  § 绒布唐工艺 </string>
+		</dict>
+		<dict>
+			<key>imageName</key>
+			<string>7.jpg</string>
+			<key>subTitle</key>
+			<string>杂技与竞技</string>
+			<key>subDescription</key>
+			<string>§ 天桥摔跤  § 老北京跤艺  § “张三”功夫  § 蹴球（踢石球）  § 南窖水峪中幡  § 北京鬃人  § 通州大风车  § 九曲黄河阵灯会  § 北京天桥中幡  § 抖空竹  § 帽山满族二魁摔跤  § 围棋  § 中国象棋 </string>
+		</dict>
+		<dict>
+			<key>imageName</key>
+			<string>8.jpg</string>
+			<key>subTitle</key>
+			<string>民间美术</string>
+			<key>subDescription</key>
+			<string>§ 北京宫灯  § 京派内画鼻烟壶  § 北京补花  § 北京绢花  § 北京灯彩  § 北京宫廷补绣  § “面人郎”面塑  § “面人汤”面塑  § 北京料器  § “葡萄常”料器  § “泥人张”彩塑（北京支）  § 传统插花艺术  § 象牙雕刻  § 北京玉器工艺  § 曹氏风筝工艺 </string>
+		</dict>
+		<dict>
+			<key>imageName</key>
+			<string>9.jpg</string>
+			<key>subTitle</key>
+			<string>传统医药</string>
+			<key>subDescription</key>
+			<string>§ 同仁堂中医药文化  § 鹤年堂中医药养生文化  § 宫廷正骨（上驷院绰班处）  § 孔伯华中医世家医术  § 罗氏正骨法  § 祖传张氏正骨  § 小罗山祖传任氏正骨 </string>
+		</dict>
+		<dict>
+			<key>imageName</key>
+			<string>10.jpg</string>
+			<key>subTitle</key>
+			<string>民俗</string>
+			<key>subDescription</key>
+			<string>§ 东岳庙庙会  § 老北京叫卖  § 北京豆汁习俗  § 东来顺饮食文化  § 长哨营满族食俗  § 杨树底下村敛巧饭习俗  § 千军台、庄户幡会  § 年丰村善缘老会  § 厂甸庙会  § 妙峰山庙会  § 西邵渠金钟总督老会  § 东岳庙行业祖师信仰习俗  § 房山大石窝石作文化村落  § 石景山古城村秉心圣会 </string>
+		</dict>
+	</array>
+</dict>
+</plist>

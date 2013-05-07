@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>mainTitle</key>
+	<string>故宫博物院</string>
+	<key>mainDescription</key>
+	<string>探索紫禁城宫廷文化</string>
+	<key>subItems</key>
+	<array>
+		<dict>
+			<key>imageName</key>
+			<string>forbCity_0.png</string>
+			<key>subTitle</key>
+			<string>故宫博物院总说</string>
+			<key>subDescription</key>
+			<string>　　故宫博物院，是一座特殊的博物馆。
+　　成立于1925年的故宫博物院，建立在明清两朝皇宫——紫禁城的基础上。历经五百年兴衰荣辱，帝王宫殿的大门终于向公众敞开。
+　　故宫博物院绝无仅有的独特藏品，是世界上规模最大、保存最完整的紫禁城木结构宫殿建筑群。它是中华民族的骄傲所在，也是全人类的珍贵文化遗产。如今，昔日皇宫禁地那占地78万平方米的重重宫阙，既是收藏明清皇室珍宝的巨大宝库，也是记载明清宫廷历史的鲜活档案……因此，故宫博物院的生命线，就依附在紫禁城宫殿中，顺着它的文化脉络生长、延伸……</string>
+		</dict>
+		<dict>
+			<key>imageName</key>
+			<string>forbCity_1.jpg</string>
+			<key>subTitle</key>
+			<string>宫殿御苑游</string>
+			<key>subDescription</key>
+			<string>太和殿是紫禁城中的至尊金殿，即民间所谓皇宫中的“金銮宝殿”，这里是皇帝举行重大朝典之地。初建于明永乐年（15世纪初），后经数次灾毁和重建。明嘉靖朝改名皇极殿。满清建都北京后改为今名，蕴含天下和谐的宏旨。现在的太和殿是清康熙年重建并留存下来的。</string>
+		</dict>
+		<dict>
+			<key>imageName</key>
+			<string>forbCity_2.png</string>
+			<key>subTitle</key>
+			<string>宫廷史迹游</string>
+			<key>subDescription</key>
+			<string>清康熙五十年，雍亲王府中的格格钮祜禄氏为雍亲王胤禎生下第四个儿子，取名为弘历。
+　　弘历幼年天资聪颖，深受皇祖康熙帝宠爱，康熙曾为他挑选良师，进行多方面教育。雍正元年（1723年）弘历即被密立为太子，十一年（1733年）封为和硕宝亲王，开始参预军国要务。雍正十三年（1735年），雍正帝驾崩，弘历即位，改元乾隆。</string>
+		</dict>
+		<dict>
+			<key>imageName</key>
+			<string>forbCity_3.png</string>
+			<key>subTitle</key>
+			<string>宫藏珍宝游</string>
+			<key>subDescription</key>
+			<string>南唐御用画师顾闳中奉后主李煜之命，赴韩熙载家夜宴观察，而后根据记忆绘出其宴乐场面以呈御览。这幅记录大臣夜生活的作品就是《韩熙载夜宴图》。
+　　顾闳中在一幅长卷上分5个片段绘出了夜宴从“众聆曼奏”到“击鼓助舞”，经“宴中小憩”又“轻音徐来”，最后“宴终曲尽”的过程。图卷中每一片段之间以屏风相隔，保持了观看的连续。</string>
+		</dict>
+	</array>
+</dict>
+</plist>

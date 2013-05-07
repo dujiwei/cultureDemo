@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>mainTitle</key>
+	<string>北京大学图书馆</string>
+	<key>mainDescription</key>
+	<string>我国最早的现代新型图书馆之一</string>
+	<key>subItems</key>
+	<array>
+		<dict>
+			<key>imageName</key>
+			<string>Library_0.png</string>
+			<key>subTitle</key>
+			<string>北大图书馆介绍</string>
+			<key>subDescription</key>
+			<string>1973 年 4 月开工的北大图书馆是当时在校本部建设的唯一大型建筑，新馆于 1974 年 12 月 30 日在校园中心地带落成， 1975 年 5 月 1 日正式开馆。该馆建筑面积为 24813 平米，外形为“出”字形。它是当时国内建筑面积最大，馆舍条件最好的图书馆。 2005 年改造完工后称为图书馆西楼， 1998 年在其东面落成的馆舍被称为图书馆东楼。 </string>
+		</dict>
+		<dict>
+			<key>imageName</key>
+			<string>Library_1.png</string>
+			<key>subTitle</key>
+			<string>历史沿革</string>
+			<key>subDescription</key>
+			<string>回顾北京大学图书馆一百多年来走过的历程，许多名人学者为图书馆的建设倾尽心血，更有无数北大图书馆人洒下无私的汗水。北大名师的皇皇巨著，北大学子的健康成长，都与北大图书馆的发展有着密切的关系。北京大学图书馆见证了几代北大人发愤学习，振兴中华的梦想，她不仅是燕园的亮丽风景，更是北大人心中的知识圣殿。
+馆藏发展：百年搜求，蔚为大观
+历史人物：百年风云沧桑巨变，几代名人独立潮人
+馆舍变迁：从公主府到燕园，从传统到现代
+业务管理：从向西方学习，到独具一格
+读者服务：从被动到主动，从简单到完善
+队伍建设：向高层次、专业化发展
+研究开发：发扬学术传统，促进业务工作
+社会贡献：任重道远
+</string>
+		</dict>
+	</array>
+</dict>
+</plist>

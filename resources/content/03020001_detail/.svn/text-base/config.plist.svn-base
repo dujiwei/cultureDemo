@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>03020001</key>
+	<dict>
+		<key>Title</key>
+		<string>丁丁历险记</string>
+		<key>SubListTitle</key>
+		<string>上映影院</string>
+		<key>SubList</key>
+		<array>
+			<dict>
+				<key>Title</key>
+				<string>首都电影院</string>
+			</dict>
+			<dict>
+				<key>Title</key>
+				<string>传奇时代影城</string>
+			</dict>
+			<dict>
+				<key>Title</key>
+				<string>北京紫光影城</string>
+			</dict>
+			<dict>
+				<key>Title</key>
+				<string>海航文化天宝国际影城</string>
+			</dict>
+		</array>
+		<key>InfoPages</key>
+		<array>
+			<dict>
+				<key>Title</key>
+				<string>影片简介</string>
+				<key>Content</key>
+				<string>1.html</string>
+			</dict>
+			<dict>
+				<key>Title</key>
+				<string>剧情</string>
+				<key>Content</key>
+				<string>2.html</string>
+			</dict>
+			<dict>
+				<key>Title</key>
+				<string>主要演员</string>
+				<key>Content</key>
+				<string>3.html</string>
+			</dict>
+			<dict>
+				<key>Title</key>
+				<string>电影宣传图片</string>
+				<key>Content</key>
+				<string>4.html</string>
+			</dict>
+		</array>
+	</dict>
+</dict>
+</plist>

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>mainTitle</key>
+	<string>国家会议中心</string>
+	<key>mainDescription</key>
+	<string> </string>
+	<key>subItems</key>
+	<array>
+		<dict>
+			<key>imageName</key>
+			<string>0.jpg</string>
+			<key>subTitle</key>
+			<string>国家会议中心</string>
+			<key>subDescription</key>
+			<string>国家会议中心位于鸟巢和水立方之北，是一座八层楼、近400米的长形建筑，由击剑馆、国际广播中心组成，主新闻中心（MPC）是文字记者和摄影记者进驻的工作区，共有1000多个记者工作席位及硬件配套设施。国际广播中心建筑面积14万平方米，是奥运会历史上最大的国际广播中心，奥运会期间，来自全世界16000名广播记者都在此工作。</string>
+		</dict>
+		<dict>
+			<key>imageName</key>
+			<string>1.jpg</string>
+			<key>subTitle</key>
+			<string>展区图片</string>
+			<key>subDescription</key>
+			<string>展览设施(6张)国家会议中心的展览区总面积为40，000平方米，分为地上展厅和地下展厅。地上展厅面积为22，000平方米，室内空间净高12米，为无柱式设计并可灵活分割为4个独立展厅。地下一层展厅总面积为13，000平方米，室内高度为4.5米。为了便于展台搭建，展览区的水、电、压缩空气等常备装置都设置在地井内。货车也能直接从位于中心西侧，高4.8米、宽4.5米的大货门直接进出。而独立的观众出入口则安排在了中心的东侧。</string>
+		</dict>
+		<dict>
+			<key>imageName</key>
+			<string>2.jpg</string>
+			<key>subTitle</key>
+			<string>近期展讯——中国国际古城古镇古村博览会（2011.12.16-2011.12.18）</string>
+			<key>subDescription</key>
+			<string>中国国际古城古镇古村博览会是中国境内唯一的国家级国际性的以古城古镇古村为展示主体对象的博览会，旨在为中国古城镇的建筑保护和文化推广，搭建一个国际性、高规格的产业服务平台。为响应和落实中央精神，更好地挖掘、保护和传承中国古城古镇古村的历史文化遗产，以及贯彻党的“十七届六中全会”的会议精神推动文化产业成为国民经济支柱产业，推进文化、旅游产业发展和消费，加强国内外古城古镇古村的交流学习。“中国国际古城古镇古村博览会”以“让历史走向未来”为主题，分为国内国际展、古城镇文化特色展。同时举办中国国际古城古镇古村保护和发展高峰论坛、古城镇项目推介及相关项目的预约洽谈交易等系列活动。展会将邀请海内外具有代表性的古城古镇古村参展；将安排中外旅行社、投资机构等和参展的古城古镇古村对接洽谈，努力将博览会办成一个中国自己的“世博会”。   
+
+主办单位： 中国民族贸易促进会 中国旅游协会 中华文化促进会 
+支持单位：北京市旅游发展委员会 
+协办单位：香港卫视 
+承办单位：北京三古博览文化传媒有限公司   北京兴旅国际会展有限公司   
+网站：www.cihte.com</string>
+		</dict>
+		<dict>
+			<key>imageName</key>
+			<string>3.jpg</string>
+			<key>subTitle</key>
+			<string>近期展讯——中国国际太阳能行业博览会(2011.12.7-2011.12.9)</string>
+			<key>subDescription</key>
+			<string>展品范围
+光伏包括：电池和组件、平衡系统（逆变器等）、跟踪和安装系统、材料和设备、元件、以及光伏的应用； 　　光热包括：光热发电、吸热器、集热器、导热液、材料和设备、以及光热的应用。
+
+主办单位
+德国太阳能国际促进有限公司 　　
+弗莱堡国际管理与营销局 　　
+慕尼黑展览（上海）有限公司</string>
+		</dict>
+	</array>
+</dict>
+</plist>

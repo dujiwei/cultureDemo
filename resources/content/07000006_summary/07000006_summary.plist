@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>mainTitle</key>
+	<string>北京国际会议中心</string>
+	<key>mainDescription</key>
+	<string> </string>
+	<key>subItems</key>
+	<array>
+		<dict>
+			<key>imageName</key>
+			<string>0.png</string>
+			<key>subTitle</key>
+			<string>北京国际会议中心介绍</string>
+			<key>subDescription</key>
+			<string>北京国际会议中心坐落于北京北四环繁华的亚运村地区，北四环路与京城中轴线交汇处，紧邻国家体育馆鸟巢和水立方。东距首都机场20公里，南离天安门广场9公里，西临颐和园10公里，北往八达岭长城80公里，与奥运村咫尺相临。
+北京国际会议中心获得北京市旅游局授予的“五星级最佳服务场所”的称号，1996年4月15日北京国际会议中心加入国际会议与集会协会(ICCA)，成为其会员。是一家五星级会议服务接待场所，拥有各种类型的会议室48间，展览面积5000平方米。</string>
+		</dict>
+		<dict>
+			<key>imageName</key>
+			<string>1.jpg</string>
+			<key>subTitle</key>
+			<string>会场图片</string>
+			<key>subDescription</key>
+			<string>北京国际会议中心坐落于北京北四环繁华的亚运村地区，北四环路与京城中轴线交汇处，紧邻国家体育馆鸟巢和水立方。东距首都机场20公里，南离天安门广场9公里，西临颐和园10公里，北往八达岭长城80公里，与奥运村咫尺相临。
+北京国际会议中心获得北京市旅游局授予的“五星级最佳服务场所”的称号，1996年4月15日北京国际会议中心加入国际会议与集会协会(ICCA)，成为其会员。是一家五星级会议服务接待场所，拥有各种类型的会议室48间，展览面积5000平方米。</string>
+		</dict>
+		<dict>
+			<key>imageName</key>
+			<string>2.jpg</string>
+			<key>subTitle</key>
+			<string>近期会展项目——亚洲财富论坛第四届（中国）年会(2011.12.18-2011.12.20)</string>
+			<key>subDescription</key>
+			<string>本次年会将聚集世界500强企业的全球总裁/副总裁、世界500强负责亚太区业务的总裁/副总裁、亚洲500强企业的总裁/副总裁、中国500强企业的总裁/副总裁、亚洲国家央行行长、创意产业公司总裁、基金公司总裁、房地产公司总裁、矿业公司总裁、环保公司总裁等人士。
+我们特邀了中国国家领导人、国家部委、地方省市领导人以及全球媒体记者</string>
+		</dict>
+	</array>
+</dict>
+</plist>

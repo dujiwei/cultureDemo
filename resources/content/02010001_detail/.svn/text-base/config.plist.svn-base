@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>02010001</key>
+	<dict>
+		<key>Title</key>
+		<string>房山区文化馆</string>
+		<key>GuideMapTitle</key>
+		<string></string>
+		<key>width</key>
+		<integer>0</integer>
+		<key>height</key>
+		<integer>0</integer>
+		<key>SubListTitle</key>
+		<string>民间艺术</string>
+		<key>SubList</key>
+		<array>
+			<dict>
+				<key>Title</key>
+				<string>民间美术—《夕阳飞花》刻纸</string>
+			</dict>
+			<dict>
+				<key>Title</key>
+				<string>民间手工技艺—北京灯彩</string>
+			</dict>
+			<dict>
+				<key>Title</key>
+				<string>民间手工技艺—京绣</string>
+			</dict>
+			<dict>
+				<key>Title</key>
+				<string>民间美术—画虎</string>
+			</dict>
+		</array>
+		<key>InfoPages</key>
+		<array>
+			<dict>
+				<key>Title</key>
+				<string>开放时间</string>
+				<key>Content</key>
+				<string>1.html</string>
+			</dict>
+			<dict>
+				<key>Title</key>
+				<string>位置交通</string>
+				<key>Content</key>
+				<string>2.html</string>
+			</dict>
+		</array>
+	</dict>
+</dict>
+</plist>

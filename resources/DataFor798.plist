@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>mainTitle</key>
+	<string>798艺术区</string>
+	<key>mainDescription</key>
+	<string>影响世界的艺术盛会</string>
+	<key>subItems</key>
+	<array>
+		<dict>
+			<key>imageName</key>
+			<string>798art_0.jpg</string>
+			<key>subTitle</key>
+			<string>关于798</string>
+			<key>subDescription</key>
+			<string>北京798艺术区所在的地方，是新中国“一五”期间建设的“北京华北无线电联合器材厂”，即718联合厂。718联合厂是由周恩来总理亲自批准，王铮部长指挥筹建，前苏联、民主德国援助建立起来的。1952年，联合厂在京郊毫无工业基础的酒仙桥地区筹建，1954年开始土建施工，1957年10月国家领导参与了开工典礼并宣布开工生产。</string>
+		</dict>
+		<dict>
+			<key>imageName</key>
+			<string>798art_1.png</string>
+			<key>subTitle</key>
+			<string>酒吧饭店</string>
+			<key>subDescription</key>
+			<string>798厂里，曾经有一所实验室。
+后来，798工厂变成了艺术区。
+实验室，就成了798艺术咖啡
+于是，艺术与休闲、惬意和创意在798里构成了完美的搭配。
+特别订制的北欧风格的室内陈设，给人以大工业时代遗留下来的厚重感。身处其中，当您的耳边是来自西欧的悠扬音乐，手中是一杯香浓的艺术咖啡，目之所及，是充满创意和个性的艺术品，您会领悟到798的精髓莫过于此——工业与文化，创意和激情。
+798艺术咖啡，就是您等待灵感的地方……</string>
+		</dict>
+		<dict>
+			<key>imageName</key>
+			<string>798art_2.png</string>
+			<key>subTitle</key>
+			<string>798艺术中心</string>
+			<key>subDescription</key>
+			<string>798艺术中心（706大厂房）坐落于国际知名的北京798艺术区内，是目前园区内最大的锯齿形厂房，高空间、大柱距的建筑架构完整保留了兴建之初的德国包豪斯式艺术风格，传达出注重实际、简约大气的设计理念。
+
+展览空间独特的灰色拱形天花板最高处达8.6米，搭配北向而倾斜的条形天窗，保证了一天中室内采光的均匀、恒定，这也是包豪斯式锯齿厂房的标志性特征之一。空间内保留了日渐斑驳的巨大朱红色标语及废弃的设施和仪器，使历史与艺术在这里凝聚成巨大的视觉冲击力，为艺术、文化活动营造出独特的氛围。 </string>
+		</dict>
+		<dict>
+			<key>imageName</key>
+			<string>798art_3.png</string>
+			<key>subTitle</key>
+			<string>画廊</string>
+			<key>subDescription</key>
+			<string>大河画廊：2008年6月，诞生于中国当代艺术的前沿阵地—北京798艺术区。
+目标
+成为中国当代艺术界最为权威最为专业的摄影艺术画廊之一，搭建摄影艺术家与社会大众之间的沟通平台，培养有潜力的年轻艺术家，同时促进中国当代摄影艺术的积极发展，最终逐步奠定其在国际当代艺术领域的影响力。</string>
+		</dict>
+	</array>
+</dict>
+</plist>

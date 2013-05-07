@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>08000001</key>
+	<dict>
+		<key>Title</key>
+		<string>嘉德</string>
+		<key>GuideMapTitle</key>
+		<string>公司位置</string>
+		<key>width</key>
+		<integer>0</integer>
+		<key>height</key>
+		<integer>0</integer>
+		<key>SubListTitle</key>
+		<string>拍品</string>
+		<key>SubList</key>
+		<array>
+			<dict>
+				<key>Title</key>
+				<string>丽人行</string>
+			</dict>
+			<dict>
+				<key>Title</key>
+				<string>黄地青花缠枝花纹荸荠扁瓶</string>
+			</dict>
+			<dict>
+				<key>Title</key>
+				<string>毛主席去安源</string>
+			</dict>
+			<dict>
+				<key>Title</key>
+				<string>lot 9902彩色钻石戒指</string>
+			</dict>
+		</array>
+		<key>InfoPages</key>
+		<array>
+			<dict>
+				<key>Title</key>
+				<string>最新拍卖</string>
+				<key>Content</key>
+				<string>1.html</string>
+			</dict>
+			<dict>
+				<key>Title</key>
+				<string>拍卖结果</string>
+				<key>Content</key>
+				<string>2.html</string>
+			</dict>
+			<dict>
+				<key>Title</key>
+				<string>服务和支持</string>
+				<key>Content</key>
+				<string>3.html</string>
+			</dict>
+			<dict>
+				<key>Title</key>
+				<string>竞拍须知</string>
+				<key>Content</key>
+				<string>4.html</string>
+			</dict>
+		</array>
+	</dict>
+</dict>
+</plist>

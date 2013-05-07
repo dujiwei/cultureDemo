@@ -1,0 +1,48 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="textml; charset=UTF-8" />
+<title>百度地图API自定义地图</title>
+<style type="text/css">
+    html,body{margin:0;padding:0;}
+    .iw_poi_title {color:#CC5522;font-size:14px;font-weight:bold;overflow:hidden;padding-right:13px;white-space:nowrap}
+    .iw_poi_content {font:12px arial,sans-serif;overflow:visible;padding-top:4px;white-space:-moz-pre-wrap;word-wrap:break-word}
+</style>
+<script type="text/javascript" src="http://api.map.baidu.com/api?v=1.1&services=true"></script>
+<script type="text/javascript" src="http://api.map.baidu.com/api?v=1.2"></script>
+<script type="text/javascript" src="http://dev.baidu.com/wiki/static/map/API/examples/script/convertor.js"></script>
+
+</head>
+<body >
+  <div style="width:320px;height:460px;border:#ccc solid 1px;" id="container"></div>
+</body>
+</html>
+<script type="text/javascript">
+	var gpsPointStart;
+	var gpsPointEnd
+	var map = new BMap.Map("container");
+	map.addControl(new BMap.NavigationControl());
+	map.centerAndZoom(new BMap.Point(116.404, 39.915), 13);
+//	var myP1 = new BMap.Point(116.380967,39.973454);    //起点
+//	var myP2 = new BMap.Point(116.411444,39.973454);    //终点
+
+	translateOptions1 = function(gpsPointStart)
+	{	
+		map.setCenter(gpsPointStart);
+		//alert("转换后起点坐标"+gpsPointStart.lng+gpsPointStart.lat);
+		var driving2 = new BMap.DrivingRoute(map, {renderOptions:{map: map, autoViewport: true}});  
+		driving2.search(gpsPointStart, gpsPointEnd);
+	}
+
+
+	function getNowPoint(long1,lat1,long2,lat2)
+	{	
+		gpsPointStart = new BMap.Point(long1,lat1);
+		gpsPointEnd = new BMap.Point(long2,lat2);
+		//alert("传入转换前坐标＝"+long1 + "," + lat1+","+long2+","+lat2);
+
+		BMap.Convertor.translate(gpsPointStart,0,translateOptions1);
+	}	
+
+
+</script>

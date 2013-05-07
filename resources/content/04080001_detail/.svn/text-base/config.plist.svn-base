@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>04080001</key>
+	<dict>
+		<key>Title</key>
+		<string>十渡</string>
+		<key>GuideMapTitle</key>
+		<string>导游图</string>
+		<key>width</key>
+		<integer>0</integer>
+		<key>height</key>
+		<integer>0</integer>
+		<key>SubListTitle</key>
+		<string>景点</string>
+		<key>SubList</key>
+		<array>
+			<dict>
+				<key>Title</key>
+				<string>二渡：“剑壁平关”</string>
+			</dict>
+			<dict>
+				<key>Title</key>
+				<string>五渡：“叠翠听风”</string>
+			</dict>
+			<dict>
+				<key>Title</key>
+				<string>六渡：“金滩日沐”</string>
+			</dict>
+			<dict>
+				<key>Title</key>
+				<string>七渡：“旭日东升”</string>
+			</dict>
+		</array>
+		<key>InfoPages</key>
+		<array>
+			<dict>
+				<key>Title</key>
+				<string>气候及最佳旅游时间</string>
+				<key>Content</key>
+				<string>1.html</string>
+			</dict>
+			<dict>
+				<key>Title</key>
+				<string>住宿餐饮</string>
+				<key>Content</key>
+				<string>2.html</string>
+			</dict>
+			<dict>
+				<key>Title</key>
+				<string>交通状况</string>
+				<key>Content</key>
+				<string>3.html</string>
+			</dict>
+			<dict>
+				<key>Title</key>
+				<string>景点总览</string>
+				<key>Content</key>
+				<string>4.html</string>
+			</dict>
+		</array>
+	</dict>
+</dict>
+</plist>

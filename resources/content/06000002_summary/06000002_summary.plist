@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>mainTitle</key>
+	<string>北京市纪念建党90周年群众文化活动</string>
+	<key>mainDescription</key>
+	<string>第二套“北京新秧歌”候选作品</string>
+	<key>subItems</key>
+	<array>
+		<dict>
+			<key>imageName</key>
+			<string>0.png</string>
+			<key>subTitle</key>
+			<string>幸福拍手歌</string>
+			<key>subDescription</key>
+			<string>海淀区文化馆舞蹈队</string>
+		</dict>
+		<dict>
+			<key>imageName</key>
+			<string>1.png</string>
+			<key>subTitle</key>
+			<string>古琴台</string>
+			<key>subDescription</key>
+			<string>石景山区文化馆舞蹈队</string>
+		</dict>
+		<dict>
+			<key>imageName</key>
+			<string>2.png</string>
+			<key>subTitle</key>
+			<string>新好日子</string>
+			<key>subDescription</key>
+			<string>西城区宣武文化馆舞蹈队</string>
+		</dict>
+		<dict>
+			<key>imageName</key>
+			<string>3.png</string>
+			<key>subTitle</key>
+			<string>将进酒</string>
+			<key>subDescription</key>
+			<string>西城区宣武牛街街道舞蹈二队</string>
+		</dict>
+		<dict>
+			<key>imageName</key>
+			<string>4.png</string>
+			<key>subTitle</key>
+			<string>锦绣中华</string>
+			<key>subDescription</key>
+			<string>石景山区文化馆舞蹈队</string>
+		</dict>
+		<dict>
+			<key>imageName</key>
+			<string>5.png</string>
+			<key>subTitle</key>
+			<string>大红灯笼</string>
+			<key>subDescription</key>
+			<string>北京新秧歌舞蹈团</string>
+		</dict>
+	</array>
+</dict>
+</plist>

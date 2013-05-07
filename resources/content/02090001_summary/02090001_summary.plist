@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>mainTitle</key>
+	<string>北京保利剧院</string>
+	<key>mainDescription</key>
+	<string>欣赏当代高雅艺术</string>
+	<key>subItems</key>
+	<array>
+		<dict>
+			<key>imageName</key>
+			<string>Theater_0.png</string>
+			<key>subTitle</key>
+			<string>保利剧院简介</string>
+			<key>subDescription</key>
+			<string>北京保利剧院隶属于中国保利集团公司、保利文化集团有限公司，地处东二环路东四十条立桥东北角，地理位置优越，是保利大厦的主要设施之一。建筑面积约7500平方米，剧院配备有世界先进的座位、舞台、灯光、音响语言传译等全套设施，另有富丽堂皇的贵宾厅，不少享誉盛名的国内外艺术团体都在此登台献艺，是每年一度的北京国际音乐节的主会场和举行大型演出的会议活动的高雅场所。</string>
+		</dict>
+		<dict>
+			<key>imageName</key>
+			<string>Theater_1.png</string>
+			<key>subTitle</key>
+			<string>三大女高音•2011北京演唱会</string>
+			<key>subDescription</key>
+			<string>演出单位: 尤泓斐、王静、黄华丽演出城市: 北京演出地点: 保利剧院演出时间: 2011-12-21 19:30 演出票价: 280元  380元  580元  680元  880元  1080元  1280元  1680元  1880元  </string>
+		</dict>
+		<dict>
+			<key>imageName</key>
+			<string>Theater_2.png</string>
+			<key>subTitle</key>
+			<string>琥珀夜莺经典花腔女高音专场音乐会</string>
+			<key>subDescription</key>
+			<string>演出单位: 库琪儿演出城市: 北京演出地点: 保利剧院演出时间: 2011-11-08 19:30 演出票价: 180元  280元  480元  680元  880元  1280元 </string>
+		</dict>
+		<dict>
+			<key>imageName</key>
+			<string>Theater_3.png</string>
+			<key>subTitle</key>
+			<string>大型原创舞剧《粉墨春秋》</string>
+			<key>subDescription</key>
+			<string>演出单位: 黄豆豆、王迪 山西艺术职业学院 华晋舞剧团 演出城市: 北京 演出地点: 保利剧院 演出时间: 2011-11-11 19:30  演出票价: 180元  280元  380元  480元  680元  880元 </string>
+		</dict>
+	</array>
+</dict>
+</plist>

@@ -1,0 +1,399 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>items</key>
+	<array>
+		<dict>
+			<key>title</key>
+			<string>北京概貌</string>
+			<key>image</key>
+			<string>i-1.png</string>
+			<key>imageIpad</key>
+			<string>i-d1.png</string>
+			<key>controller</key>
+			<string>meeting</string>
+		</dict>
+		<dict>
+			<key>title</key>
+			<string>文化场馆</string>
+			<key>image</key>
+			<string>i-2.png</string>
+			<key>imageIpad</key>
+			<string>i-d2.png</string>
+			<key>controller</key>
+			<string>nullForArea</string>
+			<key>subTitle</key>
+			<array>
+				<dict>
+					<key>subcode</key>
+					<string>0201</string>
+					<key>subtitle</key>
+					<string>文 化 馆</string>
+					<key>description</key>
+					<string>北京著名文化场馆</string>
+				</dict>
+				<dict>
+					<key>subcode</key>
+					<string>0202</string>
+					<key>subtitle</key>
+					<string>博 物 馆</string>
+					<key>description</key>
+					<string>北京博物馆介绍</string>
+				</dict>
+				<dict>
+					<key>subcode</key>
+					<string>0203</string>
+					<key>subtitle</key>
+					<string>图 书 馆</string>
+					<key>description</key>
+					<string>北京图书馆介绍</string>
+				</dict>
+				<dict>
+					<key>subcode</key>
+					<string>0204</string>
+					<key>subtitle</key>
+					<string>美 术 馆</string>
+					<key>description</key>
+					<string>北京美术馆介绍</string>
+				</dict>
+				<dict>
+					<key>subcode</key>
+					<string>0205</string>
+					<key>subtitle</key>
+					<string>科 技 馆</string>
+					<key>description</key>
+					<string>北京科技馆介绍</string>
+				</dict>
+				<dict>
+					<key>subcode</key>
+					<string>0206</string>
+					<key>subtitle</key>
+					<string>纪 念 馆</string>
+					<key>description</key>
+					<string>北京纪念馆，名人故居介绍</string>
+				</dict>
+				<dict>
+					<key>subcode</key>
+					<string>0207</string>
+					<key>subtitle</key>
+					<string>展 览 馆</string>
+					<key>description</key>
+					<string>北京展览馆介绍</string>
+				</dict>
+				<dict>
+					<key>subcode</key>
+					<string>0208</string>
+					<key>subtitle</key>
+					<string>体 育 馆</string>
+					<key>description</key>
+					<string>北京体育馆介绍</string>
+				</dict>
+				<dict>
+					<key>subcode</key>
+					<string>0209</string>
+					<key>subtitle</key>
+					<string>其他场馆</string>
+					<key>description</key>
+					<string>北京其他类型场馆介绍</string>
+				</dict>
+			</array>
+		</dict>
+		<dict>
+			<key>title</key>
+			<string>演出剧目</string>
+			<key>image</key>
+			<string>i-3.png</string>
+			<key>imageIpad</key>
+			<string>i-d3.png</string>
+			<key>controller</key>
+			<string>nullForSearch</string>
+			<key>subTitle</key>
+			<array>
+				<dict>
+					<key>subcode</key>
+					<string>0301</string>
+					<key>subtitle</key>
+					<string>推   荐</string>
+					<key>description</key>
+					<string>北京热点场景推荐</string>
+				</dict>
+				<dict>
+					<key>subcode</key>
+					<string>0302</string>
+					<key>subtitle</key>
+					<string>电  影</string>
+					<key>description</key>
+					<string>最近各大影院热播的电影</string>
+				</dict>
+				<dict>
+					<key>subcode</key>
+					<string>0303</string>
+					<key>subtitle</key>
+					<string>音  乐</string>
+					<key>description</key>
+					<string>热点音乐介绍</string>
+				</dict>
+				<dict>
+					<key>subcode</key>
+					<string>0304</string>
+					<key>subtitle</key>
+					<string>戏  剧</string>
+					<key>description</key>
+					<string>热播戏剧介绍</string>
+				</dict>
+				<dict>
+					<key>subcode</key>
+					<string>0305</string>
+					<key>subtitle</key>
+					<string>相  声</string>
+					<key>description</key>
+					<string>相声介绍</string>
+				</dict>
+				<dict>
+					<key>subcode</key>
+					<string>0306</string>
+					<key>subtitle</key>
+					<string>歌  剧</string>
+					<key>description</key>
+					<string>歌剧演出介绍</string>
+				</dict>
+				<dict>
+					<key>subcode</key>
+					<string>0307</string>
+					<key>subtitle</key>
+					<string>舞  剧</string>
+					<key>description</key>
+					<string>舞剧演出介绍</string>
+				</dict>
+				<dict>
+					<key>subcode</key>
+					<string>0308</string>
+					<key>subtitle</key>
+					<string>杂  剧</string>
+					<key>description</key>
+					<string>杂剧演出介绍</string>
+				</dict>
+				<dict>
+					<key>subcode</key>
+					<string>0309</string>
+					<key>subtitle</key>
+					<string>小  品</string>
+					<key>description</key>
+					<string>小品演出介绍</string>
+				</dict>
+				<dict>
+					<key>subcode</key>
+					<string>0310</string>
+					<key>subtitle</key>
+					<string>话  剧</string>
+					<key>description</key>
+					<string>话剧演出介绍</string>
+				</dict>
+				<dict>
+					<key>subcode</key>
+					<string>0311</string>
+					<key>subtitle</key>
+					<string>少儿剧目</string>
+					<key>description</key>
+					<string>少儿剧目，木偶等演出介绍</string>
+				</dict>
+			</array>
+		</dict>
+		<dict>
+			<key>title</key>
+			<string>旅游景点</string>
+			<key>image</key>
+			<string>i-4.png</string>
+			<key>imageIpad</key>
+			<string>i-d4.png</string>
+			<key>controller</key>
+			<string>nullForArea</string>
+			<key>subTitle</key>
+			<array>
+				<dict>
+					<key>subcode</key>
+					<string>0401</string>
+					<key>subtitle</key>
+					<string>热  点</string>
+					<key>description</key>
+					<string>北京热点旅游景点推荐</string>
+				</dict>
+				<dict>
+					<key>subcode</key>
+					<string>0402</string>
+					<key>subtitle</key>
+					<string>古  迹</string>
+					<key>description</key>
+					<string>北京历史古迹介绍</string>
+				</dict>
+				<dict>
+					<key>subcode</key>
+					<string>0403</string>
+					<key>subtitle</key>
+					<string>寺  庙</string>
+					<key>description</key>
+					<string>北京著名寺庙介绍</string>
+				</dict>
+				<dict>
+					<key>subcode</key>
+					<string>0403</string>
+					<key>subtitle</key>
+					<string>公  园</string>
+					<key>description</key>
+					<string>北京市公园游览介绍</string>
+				</dict>
+				<dict>
+					<key>subcode</key>
+					<string>0405</string>
+					<key>subtitle</key>
+					<string>艺术文化区</string>
+					<key>description</key>
+					<string>北京著名艺术文化区域介绍</string>
+				</dict>
+				<dict>
+					<key>subcode</key>
+					<string>0406</string>
+					<key>subtitle</key>
+					<string>胡  同</string>
+					<key>description</key>
+					<string>北京著名胡同景点介绍</string>
+				</dict>
+				<dict>
+					<key>subcode</key>
+					<string>0407</string>
+					<key>subtitle</key>
+					<string>学  府</string>
+					<key>description</key>
+					<string>北京学府介绍</string>
+				</dict>
+				<dict>
+					<key>subcode</key>
+					<string>0408</string>
+					<key>subtitle</key>
+					<string>自然景观</string>
+					<key>description</key>
+					<string>北京自然景观介绍</string>
+				</dict>
+				<dict>
+					<key>subcode</key>
+					<string>0409</string>
+					<key>subtitle</key>
+					<string>游乐场</string>
+					<key>description</key>
+					<string>北京游乐场介绍</string>
+				</dict>
+			</array>
+		</dict>
+		<dict>
+			<key>title</key>
+			<string>生活服务</string>
+			<key>image</key>
+			<string>i-5.png</string>
+			<key>imageIpad</key>
+			<string>i-d5.png</string>
+			<key>controller</key>
+			<string>nullForArea</string>
+			<key>subTitle</key>
+			<array>
+				<dict>
+					<key>subcode</key>
+					<string>0501</string>
+					<key>subtitle</key>
+					<string>热  点</string>
+					<key>description</key>
+					<string>北京热点餐饮，ktv，娱乐介绍。</string>
+				</dict>
+				<dict>
+					<key>subcode</key>
+					<string>0502</string>
+					<key>subtitle</key>
+					<string>天  气</string>
+					<key>description</key>
+					<string>北京一周天气介绍</string>
+				</dict>
+				<dict>
+					<key>subcode</key>
+					<string>0503</string>
+					<key>subtitle</key>
+					<string>交  通</string>
+					<key>description</key>
+					<string>北京交通信息介绍</string>
+				</dict>
+				<dict>
+					<key>subcode</key>
+					<string>0504</string>
+					<key>subtitle</key>
+					<string>餐  饮</string>
+					<key>description</key>
+					<string>北京餐饮</string>
+				</dict>
+				<dict>
+					<key>subcode</key>
+					<string>0505</string>
+					<key>subtitle</key>
+					<string>购  物</string>
+					<key>description</key>
+					<string>北京购物中心等场所介绍</string>
+				</dict>
+				<dict>
+					<key>subcode</key>
+					<string>0506</string>
+					<key>subtitle</key>
+					<string>娱  乐</string>
+					<key>description</key>
+					<string>北京ktv，酒吧等娱乐场所介绍</string>
+				</dict>
+				<dict>
+					<key>subcode</key>
+					<string>0507</string>
+					<key>subtitle</key>
+					<string>住  宿</string>
+					<key>description</key>
+					<string>北京住宿宾馆等信息介绍</string>
+				</dict>
+			</array>
+		</dict>
+		<dict>
+			<key>title</key>
+			<string>文化活动</string>
+			<key>image</key>
+			<string>i-6.png</string>
+			<key>imageIpad</key>
+			<string>i-d6.png</string>
+			<key>controller</key>
+			<string>nullForArea</string>
+		</dict>
+		<dict>
+			<key>title</key>
+			<string>  会   展</string>
+			<key>image</key>
+			<string>i-7.png</string>
+			<key>imageIpad</key>
+			<string>i-d7.png</string>
+			<key>controller</key>
+			<string>meeting</string>
+		</dict>
+		<dict>
+			<key>title</key>
+			<string>  拍   卖</string>
+			<key>image</key>
+			<string>i-8.png</string>
+			<key>imageIpad</key>
+			<string>i-d8.png</string>
+			<key>controller</key>
+			<string>meeting</string>
+		</dict>
+		<dict>
+			<key>title</key>
+			<string>  商   城</string>
+			<key>image</key>
+			<string>i-9.png</string>
+			<key>imageIpad</key>
+			<string>i-d9.png</string>
+			<key>controller</key>
+			<string>nullForArea</string>
+		</dict>
+	</array>
+</dict>
+</plist>

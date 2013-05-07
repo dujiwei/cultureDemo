@@ -1,0 +1,105 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="textml; charset=UTF-8" />
+<title>百度地图API自定义地图</title>
+<style type="text/css">
+    html,body{margin:0;padding:0;}
+    .iw_poi_title {color:#CC5522;font-size:14px;font-weight:bold;overflow:hidden;padding-right:13px;white-space:nowrap}
+    .iw_poi_content {font:12px arial,sans-serif;overflow:visible;padding-top:4px;white-space:-moz-pre-wrap;word-wrap:break-word}
+</style>
+
+<script type="text/javascript" src="http://api.map.baidu.com/api?v=1.2"></script>
+<script type="text/javascript" src="http://dev.baidu.com/wiki/static/map/API/examples/script/convertor.js"></script>
+
+</head>
+<body >
+  <div style="width:320px;height:460px;border:#ccc solid 1px;" id="container"></div>
+</body>
+</html>
+<script type="text/javascript">
+
+//http://dev.baidu.com/wiki/map/index.php?title=%E5%BC%80%E5%8F%91%E6%8C%87%E5%8D%97
+
+
+function createMap(long,lat,strName)
+{	
+	var map = new BMap.Map("container");
+	map.addControl(new BMap.NavigationControl());
+	var pt = new BMap.Point(long,lat);
+	//alert("w"+long+","+lat);
+	map.centerAndZoom(pt, 15);
+
+	var gc = new BMap.Geocoder(); 
+	
+							// 添加标注
+		function addMarker(localResultPoi, index){
+			 var myIcon = new BMap.Icon("http://api.map.baidu.com/img/markers.png", new BMap.Size(23, 25), {
+				offset: new BMap.Size(10, 25),
+				imageOffset: new BMap.Size(0, 0 - index * 25)
+			  });
+			var marker = new BMap.Marker(localResultPoi.point, {icon: myIcon});
+			map.addOverlay(marker);
+			var infowindow = new BMap.InfoWindow();
+								var name = localResultPoi.title;
+								var phone = localResultPoi.phoneNumber;
+								var address = localResultPoi.address;
+								var lat = localResultPoi.point.lat;
+								var lng = localResultPoi.point.lng;
+								//infowindow.setContent(name+'<br /><input type="button" value="详情" onclick="sendData(\''+name+'\',\''+phone+'\',\''+address+'\','+lat+','+lng+');" />');
+								//infowindow.setContent(name+"<a style='text-decoration:none;color:#2679BA;float:right' href='#'>详情>></a>");
+								infowindow.setContent(name);
+							    var openInfoWinFun = function(){
+									//marker.openInfoWindow(infowindow);
+									sendData(name,address,phone,lng,lat,index);
+								}
+								
+								marker.addEventListener("click", openInfoWinFun);
+
+		  return marker;
+		}
+
+		function sendData(name,address,phone,lng,lat,index){
+
+		  //window.href="dt://funcion.param1.param";
+			//alert(phone);
+			var url="introduction://"+name+"$"+address+"$"+phone+"$"+lng+"$"+lat+"$"+index;
+			document.location = encodeURI(url);
+	 	}	 
+
+	translateOptions = function (pt)
+	{
+		map.setCenter(pt);
+		gc.getLocation(pt, function(rs){
+		var addComp = rs.addressComponents;
+		//alert(addComp.province + "," + addComp.city + "," + addComp.district + "," + addComp.street + "," + addComp.streetNumber);
+		//alert("h"+pt.lng+","+ pt.lat);
+		
+				        
+		        var options = {
+					 onSearchComplete: function(results){
+						// 判断状态是否正确
+						if (local.getStatus() == BMAP_STATUS_SUCCESS){
+							map.clearOverlays();
+							for (var i = 0; i < results.getCurrentNumPois(); i ++){
+								var localResultPoi = results.getPoi(i);
+								var marker = addMarker(localResultPoi,i);
+								 
+							}
+						}
+					}
+				}
+//		var local = new BMap.LocalSearch(map, {
+//				renderOptions:{map: map, autoViewport:true}
+//			});
+		var local = new BMap.LocalSearch(map, options);
+		//local.searchNearby("中国人保理赔 中心", addComp.province  + addComp.city  + addComp.district + addComp.street + addComp.streetNumber);
+		local.searchNearby(strName, addComp.province + addComp.city + addComp.district + addComp.street);
+		});  
+
+	}
+    BMap.Convertor.translate(pt,0,translateOptions);
+
+}	
+
+</script>

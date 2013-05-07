@@ -1,0 +1,50 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="textml; charset=UTF-8" />
+<title>百度地图API自定义地图</title>
+<style type="text/css">
+    html,body{margin:0;padding:0;}
+    .iw_poi_title {color:#CC5522;font-size:14px;font-weight:bold;overflow:hidden;padding-right:13px;white-space:nowrap}
+    .iw_poi_content {font:12px arial,sans-serif;overflow:visible;padding-top:4px;white-space:-moz-pre-wrap;word-wrap:break-word}
+</style>
+<script type="text/javascript" src="http://api.map.baidu.com/api?v=1.1&services=true"></script>
+<script type="text/javascript" src="http://dev.baidu.com/wiki/static/map/API/examples/script/convertor.js"></script>
+
+</head>
+<body >
+  <div style="width:320px;height:460px;border:#ccc solid 1px;" id="container"></div>
+</body>
+</html>
+<script type="text/javascript">
+
+//http://dev.baidu.com/wiki/map/index.php?title=%E5%BC%80%E5%8F%91%E6%8C%87%E5%8D%97
+
+//http://api.map.baidu.com/api?key=&v=1.1&services=true
+
+	//var bm = new BMap.Map("container", {mapType:BMAP_PERSPECTIVE_MAP}); //3d
+	var bm = new BMap.Map("container");
+	var point = new BMap.Point(116.404844,39.923125);
+	//bm.setCurrentCity("北京");          // 3d 设置地图显示的城市 此项是必须设置的
+	function createMap(long,lat){	
+	bm.centerAndZoom(point, 15);
+    var gpsPoint = new BMap.Point(long,lat);
+    BMap.Convertor.translate(gpsPoint,0,translateOptions);
+}	
+	translateOptions = function(point){
+	//alert("HI~~~");
+    bm.clearOverlays();
+	bm.addControl(new BMap.NavigationControl());
+    var marker = new BMap.Marker(point);
+    bm.addOverlay(marker);
+//	marker.setAnimation(BMAP_ANIMATION_BOUNCE); //跳动的动画
+    bm.setCenter(point);
+
+//	var traffic = new BMap.TrafficLayer();		//	创建交通流量图层实例 
+//	bm.addTileLayer(traffic);
+	bm.addControl(new BMap.TrafficControl());	//	1.2版本不支持TrafficControl()
+//	bm.addControl(new BMap.MapTypeControl());
+
+}	
+
+</script>	

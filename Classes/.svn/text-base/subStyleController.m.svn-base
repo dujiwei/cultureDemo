@@ -1,0 +1,236 @@
+//
+//  subStyleController.m
+//  cultureDemo
+//
+//  Created by dujw on 11-10-31.
+//  Copyright 2011 __MyCompanyName__. All rights reserved.
+//
+
+#import "subStyleController.h"
+#import "dataBaseOperate.h"
+#import "culturePlaceViewController.h"
+#import "SummaryViewController.h"
+#import "SummaryViewDSFromRes.h"
+#import "dtCloudDelegate.h"
+#import "paimaiViewController.h"
+#import "ShowListViewController.h"
+//#import "newsSecondViewController.h"
+
+@implementation subStyleController
+@synthesize myData;
+@synthesize title;
+@synthesize dhcpController;
+#pragma mark -
+#pragma mark View lifecycle
+
+
+- (void)viewDidLoad {
+    [super viewDidLoad];
+    dhcpController = [[culturePlaceViewController alloc] init];
+	
+    // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
+    // self.navigationItem.rightBarButtonItem = self.editButtonItem;
+}
+
+
+
+- (void)viewWillAppear:(BOOL)animated {
+    [super viewWillAppear:animated];
+	
+	[self.navigationItem setTitle:self.title];
+	//NSLog(@"%d",[myData count]);
+	[self.tableView reloadData];
+}
+
+/*
+- (void)viewDidAppear:(BOOL)animated {
+    [super viewDidAppear:animated];
+}
+*/
+/*
+- (void)viewWillDisappear:(BOOL)animated {
+    [super viewWillDisappear:animated];
+}
+*/
+/*
+- (void)viewDidDisappear:(BOOL)animated {
+    [super viewDidDisappear:animated];
+}
+*/
+/*
+// Override to allow orientations other than the default portrait orientation.
+- (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation {
+    // Return YES for supported orientations.
+    return (interfaceOrientation == UIInterfaceOrientationPortrait);
+}
+*/
+
+
+#pragma mark -
+#pragma mark Table view data source
+
+- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
+    // Return the number of sections.
+    return 1;
+}
+
+
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
+    // Return the number of rows in the section.
+     return self.myData.count;
+}
+
+
+// Customize the appearance of table view cells.
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
+    
+    static NSString *CellIdentifier = @"Cell";
+    
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
+    if (cell == nil) {
+        cell = [[[UITableViewCell alloc] initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:CellIdentifier] autorelease];
+    }
+    
+    // Configure the cell...
+    cell.textLabel.text = [[myData objectAtIndex:indexPath.row] objectForKey:kSubTitleKey_main];
+	cell.detailTextLabel.text =  [[myData objectAtIndex:indexPath.row] objectForKey:kSubDescriptionKey_main];
+	cell.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
+	cell.image = [UIImage imageNamed:SHOWIMAGENAME];
+	
+    return cell;
+}
+
+
+/*
+// Override to support conditional editing of the table view.
+- (BOOL)tableView:(UITableView *)tableView canEditRowAtIndexPath:(NSIndexPath *)indexPath {
+    // Return NO if you do not want the specified item to be editable.
+    return YES;
+}
+*/
+
+
+/*
+// Override to support editing the table view.
+- (void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath {
+    
+    if (editingStyle == UITableViewCellEditingStyleDelete) {
+        // Delete the row from the data source.
+        [tableView deleteRowsAtIndexPaths:[NSArray arrayWithObject:indexPath] withRowAnimation:UITableViewRowAnimationFade];
+    }   
+    else if (editingStyle == UITableViewCellEditingStyleInsert) {
+        // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view.
+    }   
+}
+*/
+
+
+/*
+// Override to support rearranging the table view.
+- (void)tableView:(UITableView *)tableView moveRowAtIndexPath:(NSIndexPath *)fromIndexPath toIndexPath:(NSIndexPath *)toIndexPath {
+}
+*/
+
+
+/*
+// Override to support conditional rearranging of the table view.
+- (BOOL)tableView:(UITableView *)tableView canMoveRowAtIndexPath:(NSIndexPath *)indexPath {
+    // Return NO if you do not want the item to be re-orderable.
+    return YES;
+}
+*/
+
+
+#pragma mark -
+#pragma mark Table view delegate
+
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+
+	//在这里进行判断，如果是会展，//---会展再这里会展现不同的方式，因此会去直接调用
+
+	/*NSArray * GetsubCode = getDetailDataOfSubStyle( [[myData objectAtIndex:indexPath.row] objectForKey:kSubCodeKey_main]);
+    NSLog(@"array = %@",[GetsubCode description]);
+	NSString * tempCode = [[GetsubCode objectAtIndex:0] objectForKey:@"mainStyle"];
+	NSLog(@"tempcpde = %@",tempCode);*/
+	//得到主窗体
+	//根据subCode去判断拍卖里面的特例
+//	NSLog(@"%@",[[myData objectAtIndex:indexPath.row] objectForKey:kSubCodeKey_main]);
+/*	if ([[[myData objectAtIndex:indexPath.row] objectForKey:kSubCodeKey_main] isEqualToString:@"0801000000000000"]) {
+		//拍卖新闻资讯－－－demo，后续研发阶段采用从数据库中读取的方式。这里直接调用即可
+		
+		//NSString * theId = [[GetsubCode objectAtIndex:indexPath.row] objectForKey:@"subCode"];
+	//	NSLog(@"teh id = %@",theId);
+		//SummaryViewController * summaryViewController = [[[SummaryViewController alloc] initWithId:theId] autorelease];
+		paimaiViewController * paimai = [[paimaiViewController alloc] init];
+		[self.navigationController pushViewController:paimai animated:YES];
+		
+	}
+	else
+	{*/
+		// [self initInfoForSpecificItem:i];
+		//开始显示详细的细节，根据传递过来的subcode，从数据库当中读取。
+		NSString * subStyle = [[myData objectAtIndex:indexPath.row] objectForKey:kSubCodeKey_main];
+		// 演出剧目单独处理
+	/*if ([[subStyle substringToIndex:4] compare:@"0101"] ==NSOrderedSame ||
+		 [[subStyle substringToIndex:4] compare:@"0102"] ==NSOrderedSame ) {
+		newsSecondViewController *news = [[newsSecondViewController alloc] init];
+		[self.navigationController pushViewController:news animated:YES];
+		news.release;
+		
+	}
+	
+	else*/	if ([[subStyle substringToIndex:2] compare:@"03"] == NSOrderedSame) { 
+			ShowListViewController * showListViewController = [[ShowListViewController alloc] init];
+			showListViewController.title = [[myData objectAtIndex:indexPath.row] valueForKey:kSubTitleKey_main];
+			[showListViewController setDtInfoForSpecificItem: getDetailDataOfShow( [[myData objectAtIndex:indexPath.row] objectForKey:kSubCodeKey_main])];
+			[self.navigationController pushViewController:showListViewController animated:YES];
+			[showListViewController release];
+		} else { // 其他则进通用画面
+			self.dhcpController.title = [[myData objectAtIndex:indexPath.row] valueForKey:kSubTitleKey_main];
+			[self.dhcpController setDtInfoForSpecificItem: getDetailDataOfSubStyle( [[myData objectAtIndex:indexPath.row] objectForKey:kSubCodeKey_main])];
+			// [self.dhcpController.tableView reloadData];
+			[self.navigationController pushViewController:dhcpController animated:YES];
+		}
+	//}
+}
+
+// Override to allow orientations other than the default portrait orientation.
+- (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation {
+    // Return YES for supported orientations.
+	if (ISPAD())
+	{
+		//return (interfaceOrientation ==UIInterfaceOrientationLandscapeLeft );
+		return YES;
+	}
+	else {
+		return (interfaceOrientation == UIInterfaceOrientationPortrait);
+		
+	}
+}	
+
+#pragma mark -
+#pragma mark Memory management
+
+- (void)didReceiveMemoryWarning {
+    // Releases the view if it doesn't have a superview.
+    [super didReceiveMemoryWarning];
+    
+    // Relinquish ownership any cached data, images, etc. that aren't in use.
+}
+
+- (void)viewDidUnload {
+    // Relinquish ownership of anything that can be recreated in viewDidLoad or on demand.
+    // For example: self.myOutlet = nil;
+}
+
+
+- (void)dealloc {
+	[myData release];
+	[title release];
+	[dhcpController release];
+    [super dealloc];
+}
+
+
+@end
+

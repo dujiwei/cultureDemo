@@ -1,0 +1,315 @@
+
+#import "RootViewController.h"
+#import "FirstDetailViewController.h"
+#import "SecondDetailViewController.h"
+#import "dtCloudDelegate.h"
+#import "navigatorViewController.h"
+#import "DTNavigationController.h"
+#import "myPackController.h"
+#import "baiduMapViewController.h"
+#import "SinaWeiboViewController.h"
+static NSString *  TABSHOWITEM = @"tabShowItem";
+static NSString * kTabNameKey = @"name";
+static NSString * kTabImageKey = @"image";
+
+
+
+@implementation RootViewController
+
+@synthesize popoverController, splitViewController, rootPopoverButtonItem,bar;
+@synthesize ipadHome;
+
+#pragma mark -
+#pragma mark View lifecycle
+
+- (void)viewDidLoad {
+    
+    [super viewDidLoad];
+
+	CGRect rect = self.view.frame;
+	rect.size.height = 768.0 - bar.frame.size.height;
+	rect.size.width = 310.0;
+	self.view.frame = rect;
+
+    // Set the content size for the popover: there are just two rows in the table view, so set to rowHeight*2.
+    self.contentSizeForViewInPopover = CGSizeMake(310.0, 600); //self.tableView.rowHeight*2.0
+	
+	tDict = [[NSDictionary alloc] initWithContentsOfFile:[[NSBundle mainBundle] pathForResource:TABSHOWITEM ofType:@"plist"]];
+	
+	tableData = [ tDict objectForKey:@"items"] ;
+	self.title = @"";
+	
+	/*UIImageView *tableBg = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"d-1.png"]];
+	[self.tableView setBackgroundView:tableBg];
+	[tableBg release];*/
+	[self.tableView setBackgroundColor:[UIColor blackColor]];
+
+	UIImageView *tableBg = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"t-1.png"]];
+	[bar insertSubview:tableBg atIndex:0];
+	[tableBg release];
+
+	UILabel * barTitle = [[[UILabel alloc] initWithFrame:CGRectMake(0.0f, 0.0f, 324.0f/*bar.frame.size.width*/, 43.0f/*bar.frame.size.height*/)] autorelease];
+	barTitle.text = MENUNAME;
+	barTitle.textColor = [UIColor whiteColor];
+	barTitle.backgroundColor = [UIColor clearColor];
+	barTitle.textAlignment = UITextAlignmentCenter;
+	[bar addSubview:barTitle];
+	
+	[self.tableView setSeparatorStyle:UITableViewCellSeparatorStyleNone];
+	
+	/*	[self.tableView scrollToRowAtIndexPath:idxPath 
+						  atScrollPosition:UITableViewScrollPositionMiddle 
+								  animated:NO];*/
+	
+	const float size = 40.0;
+	const float margin = 20.0;
+	rect = CGRectMake(margin, self.view.frame.size.height - margin - size, size, size);
+	UIImageView * settingIcon = [[[UIImageView alloc] initWithImage:[UIImage imageNamed:@"齿轮.png"]] autorelease];
+	settingIcon.frame = rect;
+	[self.view addSubview:settingIcon];
+
+	rect.origin.x = 0.0;
+	rect.size.width = self.view.frame.size.width - margin;
+	UILabel * versionLabel = [[[UILabel alloc] initWithFrame:rect] autorelease];
+	versionLabel.text = @"V1.0";
+	versionLabel.textColor = [UIColor whiteColor];
+	versionLabel.backgroundColor = [UIColor clearColor];
+	versionLabel.textAlignment = UITextAlignmentRight;
+	[self.view addSubview:versionLabel];
+	
+	self.initForHeadPage;
+}
+
+-(void) initForHeadPage
+{
+	NSIndexPath *idxPath = [NSIndexPath indexPathForRow:0 inSection:0];
+ UIViewController <SubstitutableDetailViewController> *detailViewController = nil;
+	[self.tableView selectRowAtIndexPath:idxPath animated:YES scrollPosition:UITableViewScrollPositionMiddle];
+	FirstDetailViewController *newDetailViewController = [[FirstDetailViewController alloc] initWithNibName:@"FirstDetailView" bundle:nil];
+	newDetailViewController.title = [[tableData objectAtIndex:0] objectForKey:kTabNameKey];
+	DTNavigationController * navController = [[DTNavigationController alloc] initWithRootViewController:newDetailViewController];
+	[navController setNavigationBarHidden:YES];
+	detailViewController = navController;
+	// Update the split view controller's view controllers array.
+    NSArray *viewControllers = [[NSArray alloc] initWithObjects:self.navigationController, detailViewController, nil];
+    splitViewController.viewControllers = viewControllers;
+    [viewControllers release];
+    
+    // Dismiss the popover if it's present.
+    if (popoverController != nil) {
+        [popoverController dismissPopoverAnimated:YES];
+    }
+	
+    // Configure the new view controller's popover button (after the view has been displayed and its toolbar/navigation bar has been created).
+    if (rootPopoverButtonItem != nil) {
+        [detailViewController showRootPopoverButtonItem:self.rootPopoverButtonItem];
+    }
+	
+    [detailViewController release];
+}
+
+-(void) viewDidUnload {
+	[super viewDidUnload];
+	
+	self.splitViewController = nil;
+	self.rootPopoverButtonItem = nil;
+}
+
+#pragma mark -
+#pragma mark Rotation support
+
+- (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation {
+	if (ISPAD())
+	{
+	
+		//return YES;
+		return (interfaceOrientation ==UIInterfaceOrientationLandscapeLeft);
+	}
+	else {
+		return (interfaceOrientation == UIInterfaceOrientationPortrait);
+		
+	}
+	
+}
+
+
+- (void)splitViewController:(UISplitViewController*)svc willHideViewController:(UIViewController *)aViewController withBarButtonItem:(UIBarButtonItem*)barButtonItem forPopoverController:(UIPopoverController*)pc {
+    
+    // Keep references to the popover controller and the popover button, and tell the detail view controller to show the button.
+  /*  barButtonItem.title = MENUNAME;
+    self.popoverController = pc;
+    self.rootPopoverButtonItem = barButtonItem;
+    UIViewController <SubstitutableDetailViewController> *detailViewController = [splitViewController.viewControllers objectAtIndex:1];
+    [detailViewController showRootPopoverButtonItem:rootPopoverButtonItem];*/
+}
+
+
+- (void)splitViewController:(UISplitViewController*)svc willShowViewController:(UIViewController *)aViewController invalidatingBarButtonItem:(UIBarButtonItem *)barButtonItem {
+ 
+    // Nil out references to the popover controller and the popover button, and tell the detail view controller to hide the button.
+  /*  UIViewController <SubstitutableDetailViewController> *detailViewController = [splitViewController.viewControllers objectAtIndex:1];
+    [detailViewController invalidateRootPopoverButtonItem:rootPopoverButtonItem];
+    self.popoverController = nil;
+    self.rootPopoverButtonItem = nil;*/
+}
+
+
+#pragma mark -
+#pragma mark Table view data source
+
+- (NSInteger)tableView:(UITableView *)aTableView numberOfRowsInSection:(NSInteger)section {
+    
+    // Two sections, one for each detail view controller.
+     return [tableData count];
+	
+}
+
+- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+	return 80;
+}
+
+- (UITableViewCell *)tableView:(UITableView *)aTableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
+    
+	static NSString *CellIdentifier = @"CellIdentifier";
+    
+    // Dequeue or create a cell of the appropriate type.
+    UITableViewCell *cell = [aTableView dequeueReusableCellWithIdentifier:CellIdentifier];
+    if (cell == nil) {
+		//  cell = [[[UITableViewCell alloc] initWithStyle:UITableViewCellStyleValue1 reuseIdentifier:CellIdentifier] autorelease];
+		//  cell.accessoryType = UITableViewCellAccessoryNone;
+		[[NSBundle mainBundle] loadNibNamed:@"ipadHomeTableCell" owner:self options:nil];
+        cell = ipadHome;
+		cell.backgroundView = [[UIImageView alloc]initWithImage:[UIImage imageNamed:@"t-2.png"]]; //cell的背景图
+		cell.selectedBackgroundView =  [[UIImageView alloc]initWithImage:[UIImage imageNamed:@"t-2-1.png"]];
+		cell.textLabel.backgroundColor = [UIColor clearColor];
+	//	cell.textLabel.textColor = [UIColor whiteColor];
+			
+        self.ipadHome = nil;
+		
+    }
+    UILabel * namelabel;
+	UIImageView* imageView;
+	
+	namelabel = (UILabel *)[cell viewWithTag:2];
+	[namelabel setText:[[tableData objectAtIndex:indexPath.row] objectForKey:kTabNameKey]];
+	[namelabel setTextColor:[UIColor whiteColor]];
+	imageView = (UIImageView *)[cell viewWithTag:1];
+	[imageView setImage:[UIImage imageNamed:[[tableData objectAtIndex:indexPath.row] objectForKey:kTabImageKey]]];
+	
+    return cell;
+}
+
+
+#pragma mark -
+#pragma mark Table view selection
+
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+    
+    /*
+     Create and configure a new detail view controller appropriate for the selection.
+     */
+    NSUInteger row = indexPath.row;
+    
+    UIViewController <SubstitutableDetailViewController> *detailViewController = nil;
+
+    if (row == 0) {
+        FirstDetailViewController *newDetailViewController = [[FirstDetailViewController alloc] initWithNibName:@"FirstDetailView" bundle:nil];
+        newDetailViewController.title = [[tableData objectAtIndex:indexPath.row] objectForKey:kTabNameKey];
+		DTNavigationController * navController = [[DTNavigationController alloc] initWithRootViewController:newDetailViewController];
+        [navController setNavigationBarHidden:YES];
+		detailViewController = navController;
+    }
+
+    if (row == 1) {
+       // SecondDetailViewController *newDetailViewController = [[SecondDetailViewController alloc] initWithNibName:@"SecondDetailView" bundle:nil];
+		navigatorViewController *newDetailViewController = [[navigatorViewController alloc] init];
+		newDetailViewController.title = [[tableData objectAtIndex:indexPath.row] objectForKey:kTabNameKey];
+		DTNavigationController * navController = [[DTNavigationController alloc] initWithRootViewController:newDetailViewController];
+		detailViewController = navController;
+		//[newDetailViewController release];
+    }
+	if (row ==2 ) {
+		//地图
+		baiduMapViewController *mapController = [[baiduMapViewController alloc] init];
+		mapController.title = [[tableData objectAtIndex:indexPath.row] objectForKey:kTabNameKey];
+		DTNavigationController * navController = [[DTNavigationController alloc] initWithRootViewController:mapController];
+		detailViewController = navController;
+		
+	}
+	if (row ==3) {
+		//分享 
+		if (!_engine) {
+			_engine = [[OAuthEngine alloc] initOAuthWithDelegate: self];
+			_engine.consumerKey = kOAuthConsumerKey;
+			_engine.consumerSecret = kOAuthConsumerSecret;
+		}
+		UIViewController *controller = [OAuthController controllerToEnterCredentialsWithEngine: _engine delegate: self];
+		
+		//这里是要显示授权页面的
+		if (controller) 
+			//[self.navigationController pushViewController: controller animated: YES];
+		{
+			controller.title = [[tableData objectAtIndex:indexPath.row] objectForKey:kTabNameKey];
+			DTNavigationController * navController = [[DTNavigationController alloc] initWithRootViewController:controller];
+			detailViewController = navController;
+			[navController setNavigationBarHidden:YES];
+		}
+		//已授权，显示用户微薄
+		else {
+			NSLog(@"Authenicated for %@..", _engine.username);
+			[OAuthEngine setCurrentOAuthEngine:_engine];
+			
+			SinaWeiboViewController *sinaController= [[SinaWeiboViewController alloc]init];
+			sinaController.title = [[tableData objectAtIndex:indexPath.row] objectForKey:kTabNameKey];
+			DTNavigationController * navController = [[DTNavigationController alloc] initWithRootViewController:sinaController];
+			detailViewController = navController;
+			[sinaController newTweet];
+			
+		}
+	}
+	if (row ==4) {
+		//我的导览
+		myPackController *newDetailViewController = [[myPackController alloc] init];
+		newDetailViewController.title = [[tableData objectAtIndex:indexPath.row] objectForKey:kTabNameKey];
+		DTNavigationController * navController = [[DTNavigationController alloc] initWithRootViewController:newDetailViewController];
+		detailViewController = navController;
+	}
+	if (row ==5)
+    {
+		return;
+	}	
+	if (row ==6) {
+		return;
+	}
+
+    // Update the split view controller's view controllers array.
+    NSArray *viewControllers = [[NSArray alloc] initWithObjects:self.navigationController, detailViewController, nil];
+    splitViewController.viewControllers = viewControllers;
+    [viewControllers release];
+    
+    // Dismiss the popover if it's present.
+    if (popoverController != nil) {
+        [popoverController dismissPopoverAnimated:YES];
+    }
+
+    // Configure the new view controller's popover button (after the view has been displayed and its toolbar/navigation bar has been created).
+    if (rootPopoverButtonItem != nil) {
+        [detailViewController showRootPopoverButtonItem:self.rootPopoverButtonItem];
+    }
+
+    [detailViewController release];
+}
+
+
+#pragma mark -
+#pragma mark Memory management
+
+- (void)dealloc {
+	[bar release];
+    [popoverController release];
+    [rootPopoverButtonItem release];
+    [super dealloc];
+}
+
+@end

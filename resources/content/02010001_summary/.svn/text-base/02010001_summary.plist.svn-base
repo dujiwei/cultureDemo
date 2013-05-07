@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>mainTitle</key>
+	<string>房山区文化馆</string>
+	<key>mainDescription</key>
+	<string>大型群众文化活动场所</string>
+	<key>subItems</key>
+	<array>
+		<dict>
+			<key>imageName</key>
+			<string>Culture_0.png</string>
+			<key>subTitle</key>
+			<string>主要职能介绍</string>
+			<key>subDescription</key>
+			<string>房山区文化馆是国家设立的公益性文化事业机构，隶属于房山区文化委员会，现为地市级一级馆。主要职能是组织开展群众性文化活动；深入各乡镇、街道、机关、部队、厂矿、学校进行文艺演出活动；组织辅导基层文化活动；对全区各乡镇文化站、社区文化中心进行业务指导；开展阵地培训，举办各门类培训班，满足群众的文化艺术需要。近年来，随着全国群众性文化活动的不断繁荣，文化馆为弘扬先进文化作了大量的工作。广泛组织开展群众性文艺演出活动；组织举办区级大型演出和各类比赛；辅导基层文艺团队和骨干；组织专业人员和基层骨干参加各种比赛，组织开展送文化下乡活动，丰富和活跃全区群众的文化生活；承接区内外各种展览；开展经常性的书法、美术、摄影的学习交流活动。</string>
+		</dict>
+		<dict>
+			<key>imageName</key>
+			<string>Culture_1.png</string>
+			<key>subTitle</key>
+			<string>文化动态</string>
+			<key>subDescription</key>
+			<string>http://www.fshcul.cn/dongtai.asp
+	房山区文化馆办团队接受专家组年度考评审查
+	北京市第二十二届农民艺术节开幕
+	房山区文化馆选送选手在“北仓杯”歌手大赛创佳绩
+	房山区文化馆精品歌曲《万家灯火》入选2012年春晚
+	房山区在第七届“舞动北京”大赛中获奖
+</string>
+		</dict>
+		<dict>
+			<key>imageName</key>
+			<string>Culture_2.png</string>
+			<key>subTitle</key>
+			<string>非遗保护</string>
+			<key>subDescription</key>
+			<string>房山区非物质文化遗产资源丰富、既有有流传至今的民间歌谣、传说、故事等，也有与百姓生活息息相关的传统技艺、传统美术、传统舞蹈、传统体育等，这些珍贵的传统文化遗产世代相承，流传至今。
+2005年挖掘整理了《大石窝石作文化村落》项目，成功申报市级名录，2007年挖掘整理《“菊花白”酒传统酿造技艺》、《杨家将（穆桂英）传说》成功申报国家级名录，《水峪中幡》、《五虎少林会》成功申报市级名录，2009年挖掘整理了《京绣》《灯彩制作技艺》、《狮子会》等16项，三项成功申报市级名录。根据非物质文化遗产保护名录体系建设要求，截止2009年底共完成非遗普查项目225项，国家级非物质文化遗产名录项目2项，市级非物质文化遗产名录项目8项，区级非物质文化遗产名录项目21项，内容涉及民间舞蹈、民间音乐、传统手工技艺、传统美术、体育杂技与竞技、文化空间、民俗等。
+</string>
+		</dict>
+		<dict>
+			<key>imageName</key>
+			<string>Culture_3.png</string>
+			<key>subTitle</key>
+			<string>培训辅导</string>
+			<key>subDescription</key>
+			<string>文化馆艺术学校始建于1997年3月，是我区少年儿童成长的摇篮和中老年吸取文化艺术营养的沃土。
+几年来，艺术学校开办了舞蹈、拉丁舞、儿童画、素描、电子琴、英语、奥数、写作、跆拳道、各种器乐。现有学生500余人，通过老师的辅导，其中舞蹈班学员有的考入了高等院校，有的考入七色光艺术团。素描班的学生部分同学考入了中专及大专美术院校，英语学员参加北京市英语口语大赛获得第一名等，各个专业每年都要参加考级和区内外的比赛。这不仅增强了学生学习专业的兴趣，同时也拓展了他们的知识领域，为将来的发展奠定了基础。
+艺术学校这个充满文化艺术气息的天地，正在不断培养、美化着千万个不同年龄的心灵，为我区的文化事业奉献这一切。
+</string>
+		</dict>
+	</array>
+</dict>
+</plist>

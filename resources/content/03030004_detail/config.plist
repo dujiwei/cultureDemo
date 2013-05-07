@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>03030004</key>
+	<dict>
+		<key>Title</key>
+		<string>许茹芸 如果时光芸许北京演唱会</string>
+		<key>SubListTitle</key>
+		<string></string>
+		<key>SubList</key>
+		<array/>
+		<key>InfoPages</key>
+		<array>
+			<dict>
+				<key>Title</key>
+				<string>演出信息</string>
+				<key>Content</key>
+				<string>1.html</string>
+			</dict>
+			<dict>
+				<key>Title</key>
+				<string>因为，许茹芸，所以。。。爱情</string>
+				<key>Content</key>
+				<string>2.html</string>
+			</dict>
+			<dict>
+				<key>Title</key>
+				<string>北京演唱会</string>
+				<key>Content</key>
+				<string>3.html</string>
+			</dict>
+		</array>
+	</dict>
+</dict>
+</plist>

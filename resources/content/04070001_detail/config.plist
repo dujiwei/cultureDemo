@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>04070001</key>
+	<dict>
+		<key>Title</key>
+		<string>北京大学</string>
+		<key>GuideMapTitle</key>
+		<string>北京大学地图</string>
+		<key>width</key>
+		<integer>0</integer>
+		<key>height</key>
+		<integer>0</integer>
+		<key>SubListTitle</key>
+		<string>北京大学景点</string>
+		<key>SubList</key>
+		<array>
+			<dict>
+				<key>Title</key>
+				<string>北大体育馆</string>
+			</dict>
+			<dict>
+				<key>Title</key>
+				<string>博雅塔</string>
+			</dict>
+			<dict>
+				<key>Title</key>
+				<string>未名湖</string>
+			</dict>
+			<dict>
+				<key>Title</key>
+				<string>翻尾石鱼</string>
+			</dict>
+			<dict>
+				<key>Title</key>
+				<string>百年纪念讲堂</string>
+			</dict>
+		</array>
+		<key>InfoPages</key>
+		<array>
+			<dict>
+				<key>Title</key>
+				<string>开放时间及门票</string>
+				<key>Content</key>
+				<string>1.html</string>
+			</dict>
+			<dict>
+				<key>Title</key>
+				<string>位置交通</string>
+				<key>Content</key>
+				<string>2.html</string>
+			</dict>
+		</array>
+	</dict>
+</dict>
+</plist>

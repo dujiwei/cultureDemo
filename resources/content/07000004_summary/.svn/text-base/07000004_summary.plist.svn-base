@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>mainTitle</key>
+	<string>北京展览馆</string>
+	<key>mainDescription</key>
+	<string> </string>
+	<key>subItems</key>
+	<array>
+		<dict>
+			<key>imageName</key>
+			<string>0.jpg</string>
+			<key>subTitle</key>
+			<string>北京展览馆介绍</string>
+			<key>subDescription</key>
+			<string>北京展览馆建立于1954年，是毛泽东主席亲笔题字、周恩来总理主持剪彩的北京第一座大型、综合性展览馆。四十余年来，北京展览馆接待了国内外大型展览千余个，来馆人数上亿次，在增进世界各国人民的友谊，促进国际、国内科技交流与经贸合作，加强北京的政治、经济、文化中心地位等方面发挥了积极的作用。
+据北京市规划委员会、北京市文物局二OO七年十二月十九日通知，该建筑已经北京市政府批准列入北京优秀近现代建筑保护名录（第一批）》。</string>
+		</dict>
+		<dict>
+			<key>imageName</key>
+			<string>1.jpg</string>
+			<key>subTitle</key>
+			<string>近期展会——2011南非商品展览会（2011.11.24-2011.11.26）</string>
+			<key>subDescription</key>
+			<string>为进一步扩大化双边贸易规模，优化双边贸易结构，鼓励中国企业扩大从南非的进口，特别是进口南非制成品，增进双方企业相互了解，中华人民共和国商务部定于今年11月24日-26日在北京举办“南非商品展”。展出面积约为3600平方米，拟设130个标准摊位。两国领导人对此高度重视，2011年9月，习近平副主席与到访的南非副总统莫特兰蒂会谈时，均提出要将此次展会办好。 
+　　本次展览会将以展示、宣传南非的传统、优势商品，促进南非企业与中国客商相互交流，帮助南非企业开拓中国市场为目的。展会组织者将举办南非投资环境说明会，并利用电视台、商业网站以及报纸、贸易杂志等媒体对展会进行宣传推广。届时展会将邀请中国上千家大型商贸企业、进口商、贸易商等专业采购商到会参观洽谈。</string>
+		</dict>
+		<dict>
+			<key>imageName</key>
+			<string>2.png</string>
+			<key>subTitle</key>
+			<string>近期展会——2011北京国际旅游消费展（2011.11.25-2011.11.27）</string>
+			<key>subDescription</key>
+			<string>“2011北京国际旅游消费展”将于11月25日至27日在北京展览馆举行。这是中国国内举行的首次专业旅游消费展，旨在满足北京及周边城市人民日益增长的生活需求以及国内外旅游市场不断发展的行业要求。据主办方新加坡会议与展览管理服务有限公司介绍，展会期间国内外旅游局、北京各大旅行社、航空公司、银行及保险公司、户外旅游用品公司、大型团购网站等将携手推出全面、优惠、时尚的旅游产品，使游客真正获得实惠。</string>
+		</dict>
+		<dict>
+			<key>imageName</key>
+			<string>3.jpg</string>
+			<key>subTitle</key>
+			<string>近期展会——2011冬季中国（北京）婚博会（2011.12.2-2011.12.4）</string>
+			<key>subDescription</key>
+			<string>中国婚博会-2011年冬季季北京婚博会(12月2-14日北京展览馆),全球最大世界品牌婚博会,民政部举办,中国最高规格婚博会,英美法意日韩等1800家顶级名店入驻2011年秋季中国北京婚博会发布2011国际结婚流行时尚,20万款最新结婚时尚用品满足你一站式结婚采购所有需求。</string>
+		</dict>
+		<dict>
+			<key>imageName</key>
+			<string>4.jpg</string>
+			<key>subTitle</key>
+			<string>近期展会——首届中国中医药文化产业博览会（2011.12.9-2011.12.12）</string>
+			<key>subDescription</key>
+			<string>主办单位：北京中医药学会
+承办单位：北京润宝御祥展览有限公司
+协办单位：中国中医药研究促进会 中国中药协会 北京医药行业协会 北京海虹药通电子商务有限公司
+展会面积：33630平方米</string>
+		</dict>
+	</array>
+</dict>
+</plist>

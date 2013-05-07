@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>mainTitle</key>
+	<string>红螺寺</string>
+	<key>mainDescription</key>
+	<string></string>
+	<key>Audio</key>
+	<array>
+		<dict>
+			<key>areaName</key>
+			<string>七十二联</string>
+			<key>mapName</key>
+			<string>audio1_map.png</string>
+			<key>audioName</key>
+			<string>audio1.aac</string>
+			<key>infoIntroduce</key>
+			<string>1.html</string>
+			<key>icon_high</key>
+			<string>audio1_button.png</string>
+			<key>icon_gray</key>
+			<string>audio1_button_gray.png</string>
+			<key>posion_x</key>
+			<string>60</string>
+			<key>posion_y</key>
+			<string>100</string>
+		</dict>
+		<dict>
+			<key>areaName</key>
+			<string>七十四联</string>
+			<key>mapName</key>
+			<string>audio1_map.png</string>
+			<key>audioName</key>
+			<string>audio2.aac</string>
+			<key>infoIntroduce</key>
+			<string>2.html</string>
+			<key>icon_high</key>
+			<string>audio1_button.png</string>
+			<key>icon_gray</key>
+			<string>audio1_button_gray.png</string>
+			<key>posion_x</key>
+			<string>200</string>
+			<key>posion_y</key>
+			<string>200</string>
+		</dict>
+	</array>
+	<key>subItems</key>
+	<array>
+		<dict>
+			<key>imageName</key>
+			<string>1.png</string>
+			<key>subTitle</key>
+			<string>红螺寺简介</string>
+			<key>subDescription</key>
+			<string>红螺山红螺寺景区位于怀柔区城北5公里的红螺山南麓，距北京市区55公里，景区总面积800公顷，现为国家AAAA级旅游区&quot;。深厚的历史积淀和文化浸润，奇妙的地理环境和气候条件，成就了红螺山红螺寺为一方完美殊胜、绝尘脱俗的“净土佛国”。 
+　　红螺寺坐北朝南，依山势而建，布局严谨，气势雄伟。它背倚红螺山，南照红螺湖，山环水绕，林木丰茂，古树参天。红螺寺处于红螺山山前的千亩苍翠的古松林之中，形成一幅“碧波藏古刹”的优美的画卷。
+</string>
+		</dict>
+		<dict>
+			<key>imageName</key>
+			<string>2.png</string>
+			<key>subTitle</key>
+			<string>寺庙来历</string>
+			<key>subDescription</key>
+			<string>当时中国北方正处十六国时期后赵的统治时期。晋怀帝永嘉四年（公元310），西域高僧佛图澄东来中国传教，受到后赵皇帝石勒、石虎叔侄的优礼，遂在后赵国境内弘法授徒，广建寺塔。他是经国家正式批准在中国授徒（中国人出家为僧）的第一人，后赵石虎建武末年（东晋永和四年，公元348年），卒于邺宫寺。据《高僧传》记载，佛图澄在后赵弘法30余年，先后建寺达893所，红螺寺即其中之一。
+红螺寺为十方常住寺，是我国北方最大的佛教园林，千年来一直是佛教圣地，寺院内历届主持多有皇家命派，高僧频出，佛法超凡。金代有著名的佛觉禅师，元代有云山禅师，清代际醒（梦东）大师主持红螺寺，创建红螺净土道场，佛教更为兴盛。光绪年间，印光僧人来红螺寺修学净土法门，后去普陀创建净土道场，所以世有&quot;南有普陀，北有红螺&quot;之说。
+历史上的古寺拥有300多倾耕地，号称“一天吃一顷地”，在怀柔县境内和北京其它区县内有数处下院。康熙帝于公元1694年驾临红螺寺。历史记载，红螺寺曾数次扩建重修，名扬海内外，香火旺盛。”
+</string>
+		</dict>
+		<dict>
+			<key>imageName</key>
+			<string>3.png</string>
+			<key>subTitle</key>
+			<string>环境气候</string>
+			<key>subDescription</key>
+			<string>雄伟的红螺山是红螺寺的一道天然屏障，在红螺寺周围形成了一个冬暖夏凉、空气湿润的小气候环境：冬季，寒冷的西北风被红螺山挡住，气候温和，因此，许多极难在北方存活的南方热带珍花异树，却能红螺寺落地生根、繁衍生息；夏季，潮湿的东南风吹来，在红螺山前顺坡升高，与高空的冷空气交锋后极易形成峰面雨，常常是山外热风朗日，寺院周围却是细雨阵阵。在每年的春夏秋三季，这里始终雨量充沛，潮湿温润，有利于各种植物的生长。独特的地貌，充足的雨量，造就了这里树林丰茂，层林叠翠、古松柏参天蔽日，动植物种类繁多，林中许多鸟类和多种野生小动物随处可见的生态环境。</string>
+		</dict>
+		<dict>
+			<key>imageName</key>
+			<string>4.png</string>
+			<key>subTitle</key>
+			<string>景区特色</string>
+			<key>subDescription</key>
+			<string>红螺山红螺寺景区已形成红螺寺、观音寺、五百罗汉园三个佛教文化区和红螺山、青龙山两个观景区，具有“春看花、夏避暑、秋观叶、冬赏岁寒三友”的观光特色。春天：景区山花烂漫，寺院内外的二月兰、玉兰花、牡丹花、月季花、芍药花争香斗艳，红螺寺三绝景之一的“紫藤寄松”，虽已有800多年高龄，却和睦共处，花开繁盛，仿佛一片紫色的祥云笼罩寺院，使整个寺院呈现出一派祥和的气氛；盛夏：红螺寺三绝景之一的“御竹林”，四季常青，百万翠竹含碧盈黛，宛若江南，穿过其间，绿色浓深，凉意袭人。千亩古松林浓荫蔽日，漫步林间或小憩松下，尽情感悟休闲的乐趣；金秋：红螺寺三绝景之一的千年的“雌雄银杏树”垂金挂银，金黄色的树叶与大雄宝殿交相辉映蔚为壮观。景区300多公顷的彩叶林区，由红黄绿绘成了绚烂多彩的画卷；冬天：四季常青的翠竹和松柏林使这里成为冬季里的一片绿洲，十里绿色长廊让你感到浓浓的绿意，“岁寒三友”松、竹、梅在寒风白雪中，千树梅花含笑、万竿翠竹起舞，百万苍松迎客，千年古刹赐福。</string>
+		</dict>
+	</array>
+</dict>
+</plist>
